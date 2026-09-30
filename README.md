@@ -14,6 +14,10 @@ node tools/serve.js 8791
 
 Puis ouvrir http://localhost:8791/.
 
+## Déploiement
+
+Le fichier `vercel.json` réécrit toutes les URL vers le dossier `site/` : Vercel sert donc la maquette à la racine du domaine, sans étape de build.
+
 ## Stack
 
 HTML, CSS et JavaScript sans framework. GSAP et ScrollTrigger pour les animations, Lenis pour le défilement, Three.js pour la 3D (hero et globe), d3-geo et TopoJSON pour les cartes.
