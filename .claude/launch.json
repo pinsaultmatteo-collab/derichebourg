@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "derichebourg-site",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["/Users/matteo/Desktop/BUSINESS/PMC MARKETING/clients/derichebourg/tools/serve.js", "8791"],
+      "port": 8791,
+      "autoPort": false
+    }
+  ]
+}

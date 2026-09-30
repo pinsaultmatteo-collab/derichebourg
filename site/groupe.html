@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Le Groupe — Derichebourg</title>
+  <meta name="description" content="Histoire, gouvernance, chiffres clés et implantations du groupe Derichebourg : 70 ans de recyclage des métaux, une famille aux commandes, 455 sites dans 17 pays.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/embleme.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .vtl { position: relative; border-left: 1px solid rgba(0,0,0,.14); margin-left: 120px; }
+    .vtl-item { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; padding: 0 0 48px 48px; }
+    .vtl-item::before { content: ''; position: absolute; left: -5px; top: 10px; width: 9px; height: 9px; border-radius: 50%; background: var(--papier); border: 1.5px solid #77777e; }
+    .vtl-item.key::before { background: var(--rouge); border-color: var(--rouge); box-shadow: 0 0 0 6px rgba(213,43,30,.14); }
+    .vtl-item .year { position: absolute; left: -168px; top: -2px; width: 120px; text-align: right; font-family: var(--font-display); font-weight: 700; font-size: 1.7rem; letter-spacing: -.03em; color: #77777e; line-height: 1; }
+    .vtl-item.key .year { color: var(--rouge); }
+    .vtl-item h4 { font-size: 1.15rem; margin-bottom: 8px; }
+    .vtl-item p { font-size: .92rem; color: #55555c; line-height: 1.55; }
+    .vtl-item img { width: 100%; aspect-ratio: 16/9; object-fit: cover; filter: grayscale(.5) contrast(1.05); border: 1px solid rgba(0,0,0,.1); }
+    @media (max-width: 900px) { .vtl { margin-left: 0; border-left: 0; } .vtl-item { grid-template-columns: 1fr; padding-left: 0; border-top: 1px solid rgba(0,0,0,.12); padding-top: 24px; } .vtl-item::before { display: none; } .vtl-item .year { position: static; width: auto; text-align: left; margin-bottom: 10px; } }
+    .split-bars { display: grid; gap: 20px; }
+    .split-bars .row { display: grid; grid-template-columns: 170px 1fr; gap: 16px; align-items: center; }
+    .split-bars .row span { font-family: var(--font-mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gris); }
+    .split-bars .track { height: 34px; display: flex; gap: 2px; }
+    .split-bars .track i { display: block; height: 100%; background: var(--rouge); position: relative; font-family: var(--font-display); font-weight: 700; font-size: .85rem; display: grid; place-items: center; color: #fff; transition: width 1.4s var(--ease-expo); width: 0; }
+    .split-bars .track i.g { background: #2e2e34; color: var(--gris-2); }
+  </style>
+</head>
+<body>
+<div class="veil"></div>
+<div class="noise"></div>
+<div class="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div><div class="cursor-label">Voir</div></div>
+
+<header class="header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Derichebourg — accueil"><img src="assets/logo/logo-derichebourg-blanc.svg" alt="Derichebourg"></a>
+    <ul class="nav">
+      <li><a class="nav-link" href="groupe.html">Le Groupe</a></li>
+      <li class="has-mega">
+        <a class="nav-link" href="metiers.html">Nos métiers <svg class="chev" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 3.5l3 3 3-3"/></svg></a>
+        <div class="mega">
+          <div class="mega-feature"><div class="label">Toute la chaîne</div><p class="display-s" style="margin-top:10px">De la benne au lingot, un seul interlocuteur.</p><p>Quatre publics, onze prestations, 455 sites.</p><img src="assets/img/aluminium-lingots.jpg" alt=""></div>
+          <div><h4>Industriels &amp; entreprises</h4><ul><li><a href="metiers.html#entreprises">Collecte et bennes sur site</a></li><li><a href="metiers.html#ferrailles">Ferrailles &amp; aciéries</a></li><li><a href="metiers.html#non-ferreux">Non ferreux, aluminium, inox</a></li><li><a href="metiers.html#vhu">Véhicules hors d'usage</a></li><li><a href="metiers.html#demolition">Démolition industrielle</a></li><li><a href="metiers.html#confidentiel">Destructions confidentielles</a></li><li><a href="metiers.html#site-global">Gestion globale de site</a></li></ul></div>
+          <div><h4>Collectivités</h4><ul><li><a href="metiers.html#collectivites">Collecte des déchets</a></li><li><a href="metiers.html#collectivites">Nettoiement urbain</a></li><li><a href="metiers.html#collectivites">Déchèteries &amp; centres de tri</a></li></ul><h4 style="margin-top:22px">Éco-organismes</h4><ul><li><a href="metiers.html#eco-organismes">DEEE · DEA · VHU</a></li><li><a href="metiers.html#eco-organismes">Six filières REP</a></li></ul></div>
+          <div><h4>Particuliers &amp; artisans</h4><ul><li><a href="metiers.html#particuliers">Achat de métaux au détail</a></li><li><a href="metiers.html#particuliers">Location de bennes</a></li><li><a href="contact.html#sites">Trouver un centre</a></li></ul><h4 style="margin-top:22px">Comprendre</h4><ul><li><a href="metiers.html#procede">Le procédé, étape par étape</a></li><li><a href="innovation.html">Innovation &amp; industrie</a></li></ul></div>
+        </div>
+      </li>
+      <li><a class="nav-link" href="innovation.html">Innovation</a></li>
+      <li><a class="nav-link" href="engagements.html">Engagements</a></li>
+      <li><a class="nav-link" href="carrieres.html">Carrières</a></li>
+      <li><a class="nav-link" href="investisseurs.html">Investisseurs</a></li>
+    </ul>
+    <div class="header-right">
+      <div class="lang" aria-label="Langue"><button class="is-active" data-lang="fr">FR</button><button data-lang="en">EN</button><button data-lang="de">DE</button><button data-lang="es">ES</button></div>
+      <a class="btn btn-sm" href="contact.html">Contact <span class="arr"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></span></a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu">
+  <nav><a href="groupe.html"><span>01</span>Le Groupe</a><a href="metiers.html"><span>02</span>Nos métiers</a><a href="innovation.html"><span>03</span>Innovation</a><a href="engagements.html"><span>04</span>Engagements</a><a href="carrieres.html"><span>05</span>Carrières</a><a href="investisseurs.html"><span>06</span>Investisseurs</a><a href="contact.html"><span>07</span>Contact</a></nav>
+  <div class="mm-foot"><div class="lang"><button class="is-active" data-lang="fr">FR</button><button data-lang="en">EN</button><button data-lang="de">DE</button><button data-lang="es">ES</button></div><span>Euronext Paris · DBG</span></div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <img class="bg" src="assets/img/u-grappin-ciel.jpg" alt="Grappin chargé de ferraille contre le ciel">
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Accueil</a><span>/</span>Le Groupe</div>
+      <h1 class="display-xl"><span class="line"><span>Un groupe familial,</span></span><span class="line"><span>industriel, coté.</span></span></h1>
+      <p class="lead">Une entreprise de récupération de métaux née en 1956, cotée dès 1963, reprise en 1996 par Daniel Derichebourg et transformée en trente ans, par acquisitions successives, en premier recycleur de métaux d'Europe.</p>
+      <div class="hero-stats">
+        <div class="stat"><div class="num">1956</div><div class="cap">Création de la CFF</div></div>
+        <div class="stat"><div class="num">1963</div><div class="cap">Cotation à Paris</div></div>
+        <div class="stat"><div class="num">1996</div><div class="cap">La famille Derichebourg</div></div>
+        <div class="stat"><div class="num">2026</div><div class="cap">Premier acteur européen</div></div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="subnav"><div class="container"><ul>
+    <li><a href="#histoire">Histoire</a></li><li><a href="#gouvernance">Gouvernance</a></li><li><a href="#chiffres">Chiffres clés</a></li><li><a href="#implantations">Implantations</a></li><li><a href="#valeurs">Valeurs</a></li>
+  </ul></div></nav>
+
+  <!-- HISTOIRE -->
+  <section class="section theme-light" id="histoire">
+    <div class="container">
+      <div class="split" style="margin-bottom:clamp(64px,8vw,120px)">
+        <div class="text">
+          <div class="label reveal"><span class="idx">01</span> Notre histoire</div>
+          <h2 class="display-l lines" style="margin-top:22px"><span class="line"><span>Le même métier</span></span><span class="line"><span>depuis 1956.</span></span></h2>
+          <p class="lead reveal">Trois idées traversent soixante-dix ans d'histoire : la continuité d'un métier, la constance d'une stratégie et une ambition européenne.</p>
+          <div class="proofs" data-stagger="0.1" style="margin-top:28px">
+            <div class="proof"><span class="idx">01</span><div><strong>Continuité</strong><p>Même métier depuis 1956, même famille depuis 1996, deuxième génération déjà en poste avec Thomas Derichebourg.</p></div></div>
+            <div class="proof"><span class="idx">02</span><div><strong>Constance stratégique</strong><p>Chaque acquisition renforce le cœur de métier ; les activités périphériques (aéroportuaire, multiservices) ont été cédées.</p></div></div>
+            <div class="proof"><span class="idx">03</span><div><strong>Ambition européenne</strong><p>Espagne en 2019 avec Lyrsa, Allemagne et Europe centrale en 2026 avec Scholz.</p></div></div>
+          </div>
+        </div>
+        <div class="media reveal-img"><img src="assets/img/histoire-camionnette.jpg" alt="Camionnette Derichebourg « Débarras de caves, achat ferraille et métaux »" data-parallax="8"><span class="cap">Archives Derichebourg</span></div>
+      </div>
+
+      <div class="vtl">
+        <div class="vtl-item key reveal"><div class="year">1956</div><div><h4>Création de la Compagnie Française des Ferrailles</h4><p>Des entrepreneurs conscients du potentiel de valorisation des déchets métalliques fondent la CFF.</p></div><img src="assets/img/histoire-premier-broyeur.jpg" alt="Premier broyeur en opération en France"></div>
+        <div class="vtl-item reveal"><div class="year">1963</div><div><h4>Introduction à la Bourse de Paris</h4><p>Le 23 avril 1963. Le groupe est aujourd'hui membre de l'indice SBF 120 (ticker DBG, ISIN FR0000053381).</p></div></div>
+        <div class="vtl-item reveal"><div class="year">1977</div><div><h4>Absorption de Novafer</h4><p>Branche ferreux et non ferreux.</p></div></div>
+        <div class="vtl-item reveal"><div class="year">1987</div><div><h4>Absorption de Metalinor</h4><p>Filiale d'Usinor-Sacilor : le chiffre d'affaires double.</p></div></div>
+        <div class="vtl-item reveal"><div class="year">Années 1990</div><div><h4>Partenariat avec le cimentier Vicat</h4><p>Naissance de la coentreprise Valerco, devenue Valèreco : trente-cinq ans de collaboration industrielle, toujours active en 2026 avec la ligne CSR de Pagny-sur-Meuse.</p></div><img src="assets/img/cimenterie-aerien.jpg" alt="Cimenterie vue du ciel"></div>
+        <div class="vtl-item key reveal"><div class="year">1996</div><div><h4>Daniel Derichebourg prend le contrôle</h4><p>Fils d'un récupérateur de métaux, il devient PDG de la CFF via sa holding CFER, en octobre 1996.</p></div><img src="assets/img/histoire-coulee.jpg" alt="Coulée de métal"></div>
+        <div class="vtl-item reveal"><div class="year">2005-2007</div><div><h4>Naissance du groupe Derichebourg</h4><p>Rachat de Penauille Polyservices et fusion avec CFF Recycling en 2007 : 3 500 salariés en 2006, une identité rouge, noir et blanc.</p></div><img src="assets/img/histoire-camions-2007.jpg" alt="Flotte Derichebourg"></div>
+        <div class="vtl-item reveal"><div class="year">2013</div><div><h4>Cession de Servisair</h4><p>Les activités aéroportuaires sont vendues à Swissport (450 M€) : recentrage sur l'environnement et les services.</p></div></div>
+        <div class="vtl-item reveal"><div class="year">2015-2016</div><div><h4>Vague d'acquisitions en France</h4><p>Valerio, Bienstock, six centres Galloo en Île-de-France, SLG Recycling (22 centres), Bartin Recycling (ex-Veolia, 20 sites, 450 000 t/an).</p></div><img src="assets/img/histoire-cop21.jpg" alt="Chaîne de tri présentée à la COP21"></div>
+        <div class="vtl-item reveal"><div class="year">2019</div><div><h4>Lyrsa, Espagne</h4><p>Acquisition du leader espagnol du recyclage de ferrailles et de ses 18 centres.</p></div></div>
+        <div class="vtl-item key reveal"><div class="year">2021</div><div><h4>Ecore</h4><p>Rachat du concurrent Ecore (ex-Guy Dauphin Environnement, 1,2 Md€ de CA) : Derichebourg devient le n°1 français incontesté.</p></div><img src="assets/img/vhu-compactes.jpg" alt="Carcasses compactées"></div>
+        <div class="vtl-item reveal"><div class="year">2022-2023</div><div><h4>Recentrage sur le recyclage pur</h4><p>Apport de Derichebourg Multiservices (37 000 salariés) à Elior contre 48 % du capital. Abderrahmane El Aoufir devient directeur général le 18 avril 2023, Daniel Derichebourg reste président.</p></div></div>
+        <div class="vtl-item key reveal"><div class="year">2026</div><div><h4>Scholz Recycling</h4><p>Signature le 5 mai, closing le 31 juillet : 180 sites, 3 500 salariés, 1,6 Md€ de CA en Allemagne, Tchéquie, Pologne et Slovénie pour 480 M€ de valeur d'entreprise. Le groupe passe à 5 Mds€, 8 800 collaborateurs, 17 pays.</p></div><img src="assets/img/aluminium-lingots.jpg" alt="Lingots d'aluminium"></div>
+        <div class="vtl-item reveal"><div class="year">2026</div><div><h4>Première émission d'obligations vertes</h4><p>10 septembre : 800 M€ levés dans le cadre de financement vert créé en juin 2026.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOUVERNANCE -->
+  <section class="section theme-light theme-paper2" id="gouvernance">
+    <div class="container">
+      <div class="section-head">
+        <div class="label reveal"><span class="idx">02</span> Gouvernance</div>
+        <h2 class="display-l lines"><span class="line"><span>Une famille aux commandes,</span></span><span class="line"><span>un horizon long.</span></span></h2>
+        <p class="lead reveal">Actionnaire de contrôle familial depuis 1996, deuxième génération en poste : pas de logique de fonds, une stratégie industrielle qui se juge sur trente ans.</p>
+      </div>
+      <div class="people" data-stagger="0.12">
+        <div class="person"><div class="mono">DD</div><div><h3>Daniel Derichebourg</h3><div class="role">Président du conseil d'administration</div><p>Fils d'un récupérateur de métaux, il prend le contrôle de la CFF en 1996 et bâtit en trente ans le leader européen du recyclage des métaux.</p></div></div>
+        <div class="person"><div class="mono">AEA</div><div><h3>Abderrahmane El Aoufir</h3><div class="role">Directeur général · depuis avril 2023</div><p>Pilote la stratégie de recyclage pur du groupe, l'intégration de Scholz et le déploiement de l'outil industriel en Europe.</p></div></div>
+        <div class="person"><div class="mono">TD</div><div><h3>Thomas Derichebourg</h3><div class="role">Directeur général délégué</div><p>Dirige Derichebourg Environnement, la marque opérationnelle du groupe. Deuxième génération de la famille en poste.</p></div></div>
+      </div>
+      <div class="grid" style="margin-top:clamp(48px,6vw,80px);align-items:center">
+        <div class="col-6 reveal">
+          <div class="donut">
+            <svg viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="50" stroke="#d5d5d9"/>
+              <circle cx="60" cy="60" r="50" stroke="#d52b1e" stroke-dasharray="128.8 314.2" stroke-dashoffset="0"/>
+            </svg>
+            <ul class="legend">
+              <li><i style="background:#d52b1e"></i><span>Famille Derichebourg (holding CFER)</span><b>≈ 41 %</b></li>
+              <li><i style="background:#d5d5d9"></i><span>Flottant &amp; autres actionnaires</span><b>≈ 59 %</b></li>
+            </ul>
+            <p style="grid-column:1/-1;color:#77777e;font-size:.78rem;margin-top:-8px">Plus de 50 % des droits de vote. Dernier chiffre public (2019), à actualiser avec le client.</p>
+          </div>
+        </div>
+        <div class="col-6 reveal">
+          <div class="proofs">
+            <div class="proof"><span class="idx">01</span><div><strong>Participation Elior Group</strong><p>48,17 % du capital, issue de l'apport de Derichebourg Multiservices en 2023.</p></div></div>
+            <div class="proof"><span class="idx">02</span><div><strong>Contrôle et transparence</strong><p>Comptes audités par trois cabinets (Ernst &amp; Young, Denjean &amp; Associés, BM&amp;A), information réglementée AMF, document d'enregistrement universel annuel.</p></div></div>
+            <div class="proof"><span class="idx">03</span><div><strong>Siège</strong><p>DERICHEBOURG SA, 119 avenue du Général Michel Bizot, 75012 Paris. Exercice clos le 30 septembre.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHIFFRES -->
+  <section class="section" id="chiffres">
+    <div class="tech-grid"></div>
+    <div class="container">
+      <div class="section-head">
+        <div class="label reveal"><span class="idx">03</span> Chiffres clés</div>
+        <h2 class="display-l lines"><span class="line"><span>Solide,</span></span><span class="line"><span>rentable, investisseur.</span></span></h2>
+        <p class="lead reveal">Un bilan robuste, une rentabilité maintenue à travers les cycles, et la quasi-totalité du résultat réinvestie dans l'outil industriel.</p>
+      </div>
+      <div class="grid">
+        <div class="col-7 reveal">
+          <table class="data-table">
+            <thead><tr><th>Indicateur</th><th class="num">2024-2025</th><th class="num">S1 2025-2026</th></tr></thead>
+            <tbody>
+              <tr><td>Chiffre d'affaires</td><td class="num">3 337,1 M€</td><td class="num">1 829,8 M€ <span class="up">+7,8 %</span></td></tr>
+              <tr><td>EBITDA courant</td><td class="num">319,5 M€</td><td class="num">177,8 M€ <span class="up">+9,7 %</span></td></tr>
+              <tr><td>Marge d'EBITDA courant</td><td class="num">9,6 %</td><td class="num">9,7 %</td></tr>
+              <tr><td>Résultat net part du groupe</td><td class="num">122,0 M€</td><td class="num">73,5 M€ <span class="up">+16,3 %</span></td></tr>
+              <tr><td>Investissements industriels</td><td class="num">131 M€</td><td class="num">58,2 M€</td></tr>
+              <tr><td>Fonds propres · dette nette · liquidités (30/09/2025)</td><td class="num" colspan="2">1,12 Md€ · 683 M€ · 415 M€</td></tr>
+              <tr><td>Dividende par action (au titre de 2024-2025)</td><td class="num" colspan="2">0,13 €</td></tr>
+              <tr><td>Objectif EBITDA courant 2025-2026</td><td class="num" colspan="2">350 à 370 M€</td></tr>
+            </tbody>
+          </table>
+          <p class="muted" style="font-size:.78rem;margin-top:14px">Pro forma après Scholz : 5,0 Mds€ de chiffre d'affaires, 8 800 collaborateurs, 455 implantations dans 17 pays.</p>
+        </div>
+        <div class="col-5 reveal">
+          <div class="split-bars">
+            <div class="row"><span>Chiffre d'affaires</span><div class="track"><i data-w="94">Recyclage 94 %</i><i class="g" data-w="6">6</i></div></div>
+            <div class="row"><span>Marge EBITDA recyclage</span><div class="track"><i data-w="8.9" style="min-width:64px">8,9 %</i></div></div>
+            <div class="row"><span>Marge EBITDA collectivités</span><div class="track"><i data-w="20.6" style="min-width:64px">20,6 %</i></div></div>
+            <div class="row"><span>Ferreux (kt)</span><div class="track"><i data-w="86">4 418,6</i></div></div>
+            <div class="row"><span>Non ferreux (kt)</span><div class="track"><i data-w="14" style="min-width:64px">695,1</i></div></div>
+            <div class="row"><span>CA aligné taxonomie UE</span><div class="track"><i data-w="80.8">80,8 %</i><i class="g" data-w="19.2"></i></div></div>
+          </div>
+          <p class="muted" style="font-size:.78rem;margin-top:18px">Deux pôles : le recyclage (94 % du CA) et les services aux collectivités (6 % du CA, 184 M€, marge de 20,6 %).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPLANTATIONS -->
+  <section class="section theme-charbon" id="implantations">
+    <div class="container">
+      <div class="section-head">
+        <div class="label reveal"><span class="idx">04</span> Implantations</div>
+        <h2 class="display-l lines"><span class="line"><span>455 sites.</span></span><span class="line"><span>17 pays. Une carte.</span></span></h2>
+        <p class="lead reveal">Filtrez par pays ou par métier, survolez un pays, cliquez sur un site phare. Le maillage est notre premier argument : le gisement est capté là où il naît.</p>
+      </div>
+      <div class="map-layout">
+        <aside class="map-filters">
+          <div><h4>Pays</h4><div class="chips">
+            <button class="chip is-active" data-country=""><i></i>Tous</button>
+            <button class="chip" data-country="FR"><i></i>France</button>
+            <button class="chip" data-country="DE"><i></i>Allemagne</button>
+            <button class="chip" data-country="ES"><i></i>Espagne</button>
+            <button class="chip" data-country="CZ"><i></i>Tchéquie</button>
+            <button class="chip" data-country="PL"><i></i>Pologne</button>
+            <button class="chip" data-country="IT"><i></i>Italie</button>
+            <button class="chip" data-country="BE"><i></i>Belgique</button>
+            <button class="chip" data-country="CA"><i></i>Canada</button>
+          </div></div>
+          <div><h4>Métier</h4><div class="chips">
+            <button class="chip is-active" data-metier=""><i></i>Tous</button>
+            <button class="chip" data-metier="ferrailles"><i></i>Ferrailles</button>
+            <button class="chip" data-metier="non-ferreux"><i></i>Non ferreux</button>
+            <button class="chip" data-metier="vhu"><i></i>VHU</button>
+            <button class="chip" data-metier="deee"><i></i>DEEE</button>
+            <button class="chip" data-metier="cables"><i></i>Câbles</button>
+            <button class="chip" data-metier="broyage"><i></i>Broyage</button>
+            <button class="chip" data-metier="collectivites"><i></i>Collectivités</button>
+          </div></div>
+          <p class="muted" style="font-size:.74rem;font-family:var(--font-mono);letter-spacing:.06em;line-height:1.6">Positions et répartition par métier indicatives : la liste géolocalisée des sites post-Scholz sera intégrée avec le client. Les sites phares (points blancs) sont documentés.</p>
+        </aside>
+        <div>
+          <div class="map-stage" data-cursor="Explorer">
+            <svg></svg>
+            <div class="hud"><b>455</b>implantations affichées</div>
+            <div class="zoom"><button data-view="europe" class="is-active" title="Europe">EU</button><button data-view="france" title="France">FR</button><button data-view="monde" title="Monde">🌐</button></div>
+            <div class="map-tip"></div>
+          </div>
+          <ul class="map-list"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALEURS -->
+  <section class="section theme-light" id="valeurs">
+    <div class="container">
+      <div class="section-head">
+        <div class="label reveal"><span class="idx">05</span> Nos valeurs</div>
+        <h2 class="display-l lines"><span class="line"><span>Ce qui ne change pas</span></span><span class="line"><span>quand tout grandit.</span></span></h2>
+        <p class="lead reveal">Une marque, une charte, un site : 455 implantations sous une seule identité, avec le même niveau d'exigence de Montréal à Ljubljana.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar"><div class="idx">01</div><h3>L'exigence industrielle</h3><p>Chaque site est une installation classée, chaque opérateur est formé et habilité, chaque tonne est tracée. La qualité de la matière livrée ne se négocie pas.</p></div>
+        <div class="pillar"><div class="idx">02</div><h3>La continuité</h3><p>Un métier depuis 1956, une famille depuis 1996, des partenariats qui durent trente-cinq ans. Nos clients savent qui ils trouveront en face d'eux dans dix ans.</p></div>
+        <div class="pillar"><div class="idx">03</div><h3>L'ancrage territorial</h3><p>Des emplois verts non délocalisables, une centaine de personnes insérées chaque année avec Envie, des sites qui vivent avec leur bassin industriel.</p></div>
+        <div class="pillar"><div class="idx">04</div><h3>La transparence</h3><p>Groupe coté, information réglementée, état de durabilité audité : nous publions ce que nous faisons, y compris nos indicateurs de sécurité.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Revival</span><span>Purfer</span><span>Eska</span><span>AFM Recyclage</span><span>Inorec</span><span>Refinal</span><span>Fricom</span><span>Valme</span><span>Corepa</span><span>Polyurbaine</span><span>Lyrsa</span><span>Ecore</span><span>Scholz Recycling</span><span>George</span><span>CRS</span><span>San Germano</span><span>Derichebourg Umwelt</span><span>Derichebourg Medio Ambiente</span><span>Derichebourg Canada</span><span>Valèreco</span></div></div>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="dual-cta" data-stagger="0.12">
+        <a href="metiers.html" class="red"><div><div class="label">Nos métiers</div><h3 style="margin-top:20px">Ce que nous faisons de la matière.</h3><p style="margin-top:14px">Quatre publics, onze prestations, le procédé expliqué étape par étape.</p></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></a>
+        <a href="investisseurs.html"><div><div class="label">Investisseurs</div><h3 style="margin-top:20px">Cours, résultats, documents.</h3><p style="margin-top:14px">Toute l'information réglementée du groupe, coté à Paris depuis 1963.</p></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><img src="assets/logo/logo-derichebourg-blanc.svg" alt="Derichebourg"><p>Groupe industriel français du recyclage des métaux. 119 avenue du Général Michel Bizot, 75012 Paris.</p>
+        <div class="socials"><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a></div></div>
+      <div><h4>Le Groupe</h4><ul><li><a href="groupe.html#histoire">Histoire</a></li><li><a href="groupe.html#gouvernance">Gouvernance</a></li><li><a href="groupe.html#chiffres">Chiffres clés</a></li><li><a href="groupe.html#implantations">Implantations</a></li><li><a href="groupe.html#valeurs">Valeurs</a></li></ul></div>
+      <div><h4>Nos métiers</h4><ul><li><a href="metiers.html#entreprises">Industriels &amp; entreprises</a></li><li><a href="metiers.html#collectivites">Collectivités</a></li><li><a href="metiers.html#eco-organismes">Éco-organismes</a></li><li><a href="metiers.html#particuliers">Particuliers &amp; artisans</a></li><li><a href="metiers.html#procede">Le procédé</a></li></ul></div>
+      <div><h4>Groupe</h4><ul><li><a href="innovation.html">Innovation &amp; industrie</a></li><li><a href="engagements.html">Engagements</a></li><li><a href="carrieres.html">Carrières</a></li><li><a href="investisseurs.html">Investisseurs</a></li><li><a href="index.html#actualites">Presse</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="contact.html">Nous contacter</a></li><li><a href="contact.html#sites">Trouver un site</a></li><li><a href="investisseurs.html#contact">Relations investisseurs</a></li><li><a href="#">Presse &amp; médias</a></li></ul></div>
+    </div>
+    <div class="footer-giant" aria-hidden="true">Derichebourg</div>
+    <div class="footer-bottom"><span class="ticker-dbg"><i></i> Euronext Paris · DBG · ISIN FR0000053381</span><ul><li><a href="#">Mentions légales</a></li><li><a href="#">Données personnelles</a></li><li><a href="#">Cookies</a></li><li><a href="#">Accessibilité</a></li><li><a href="#">Éthique &amp; alerte</a></li></ul><span>© <span data-year>2026</span> Derichebourg SA</span></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/map.js"></script>
+<script>
+  // Barres de répartition (largeur animée à l'apparition)
+  new IntersectionObserver((ens, io) => ens.forEach((en) => { if (!en.isIntersecting) return; en.target.querySelectorAll('i[data-w]').forEach((i) => (i.style.width = i.dataset.w + '%')); io.unobserve(en.target); }), { threshold: .3 }).observe(document.querySelector('.split-bars'));
+</script>
+</body>
+</html>

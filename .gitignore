@@ -1,0 +1,4 @@
+.DS_Store
+node_modules/
+# Fiche prospect interne (analyse concurrentielle, points « à ne pas afficher ») : non publiée
+contexte/

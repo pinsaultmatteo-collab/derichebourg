@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Engagements — Derichebourg</title>
+  <meta name="description" content="Climat, sécurité, qualité, social, conformité : les engagements chiffrés et audités de Derichebourg. 7,6 Mt de CO₂ évitées, TF en baisse de 20 %, 80,8 % du CA aligné taxonomie.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/embleme.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .acv { display: grid; gap: 18px; }
+    .acv .row { display: grid; grid-template-columns: 110px 1fr; gap: 16px; align-items: center; }
+    .acv .row > span { font-family: var(--font-display); text-transform: uppercase; font-weight: 600; font-size: .9rem; letter-spacing: .04em; }
+    .acv .pair { display: grid; gap: 5px; }
+    .acv .bar { display: grid; grid-template-columns: 1fr 60px; gap: 10px; align-items: center; font-family: var(--font-mono); font-size: .66rem; letter-spacing: .08em; color: #55555c; }
+    .acv .track { height: 10px; background: rgba(0,0,0,.08); position: relative; }
+    .acv .track span { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--rouge); transition: width 1.4s var(--ease-expo); }
+    .acv .track.e span { background: #2a2a30; }
+    .acv b { text-align: right; color: var(--encre); font-weight: 500; }
+    .acv-legend { display: flex; gap: 22px; margin-top: 16px; font-family: var(--font-mono); font-size: .64rem; letter-spacing: .12em; text-transform: uppercase; color: #6b6b72; }
+    .acv-legend i { display: inline-block; width: 12px; height: 12px; vertical-align: middle; margin-right: 8px; }
+    .traj svg { width: 100%; height: auto; overflow: visible; }
+    .traj .ln { fill: none; stroke: var(--rouge); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+    .traj .ar { fill: rgba(213,43,30,.08); }
+    .traj .dot { fill: #fff; stroke: var(--rouge); stroke-width: 2; }
+    .traj text { font-family: var(--font-mono); font-size: 9.5px; fill: #6b6b72; letter-spacing: .08em; }
+    .traj text.v { fill: var(--encre); font-weight: 500; font-size: 11px; }
+    .traj .g { stroke: rgba(0,0,0,.08); }
+    .badges { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+    .badge { background: var(--charbon); border: 1px solid var(--ligne); padding: 24px; display: grid; grid-template-columns: 44px 1fr; gap: 16px; align-items: start; transition: border-color .3s; }
+    .badge:hover { border-color: rgba(255,255,255,.35); }
+    .badge .ic { width: 44px; height: 44px; border: 1px solid var(--rouge); border-radius: 50%; display: grid; place-items: center; color: var(--rouge); font-family: var(--font-mono); font-size: .62rem; letter-spacing: .04em; }
+    .badge b { font-family: var(--font-display); text-transform: uppercase; font-size: .95rem; letter-spacing: .03em; display: block; }
+    .badge p { font-size: .84rem; color: var(--gris-2); margin-top: 6px; line-height: 1.5; }
+    @media (max-width: 900px) { .badges { grid-template-columns: 1fr 1fr; } } @media (max-width: 560px) { .badges { grid-template-columns: 1fr; } }
+    .tf-big svg { width: 100%; height: auto; overflow: visible; }
+    .tf-big .ln { fill: none; stroke: var(--rouge); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+    .tf-big .dot { fill: var(--noir); stroke: var(--rouge); stroke-width: 2; }
+    .tf-big text { font-family: var(--font-mono); font-size: 10px; fill: var(--gris); letter-spacing: .1em; }
+    .tf-big text.v { fill: #fff; font-size: 12px; font-weight: 500; }
+    .tf-big .g { stroke: rgba(255,255,255,.08); }
+    .tf-big .goal { stroke: rgba(255,255,255,.35); stroke-dasharray: 4 5; }
+  </style>
+</head>
+<body>
+<div class="veil"></div>
+<div class="noise"></div>
+<div class="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div><div class="cursor-label">Voir</div></div>
+
+<header class="header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Derichebourg — accueil"><img src="assets/logo/logo-derichebourg-blanc.svg" alt="Derichebourg"></a>
+    <ul class="nav">
+      <li><a class="nav-link" href="groupe.html">Le Groupe</a></li>
+      <li class="has-mega">
+        <a class="nav-link" href="metiers.html">Nos métiers <svg class="chev" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 3.5l3 3 3-3"/></svg></a>
+        <div class="mega">
+          <div class="mega-feature"><div class="label">Toute la chaîne</div><p class="display-s" style="margin-top:10px">De la benne au lingot, un seul interlocuteur.</p><p>Quatre publics, onze prestations, 455 sites.</p><img src="assets/img/aluminium-lingots.jpg" alt=""></div>
+          <div><h4>Industriels &amp; entreprises</h4><ul><li><a href="metiers.html#entreprises">Collecte et bennes sur site</a></li><li><a href="metiers.html#ferrailles">Ferrailles &amp; aciéries</a></li><li><a href="metiers.html#non-ferreux">Non ferreux, aluminium, inox</a></li><li><a href="metiers.html#vhu">Véhicules hors d'usage</a></li><li><a href="metiers.html#demolition">Démolition industrielle</a></li><li><a href="metiers.html#confidentiel">Destructions confidentielles</a></li><li><a href="metiers.html#site-global">Gestion globale de site</a></li></ul></div>
+          <div><h4>Collectivités</h4><ul><li><a href="metiers.html#collectivites">Collecte des déchets</a></li><li><a href="metiers.html#collectivites">Nettoiement urbain</a></li><li><a href="metiers.html#collectivites">Déchèteries &amp; centres de tri</a></li></ul><h4 style="margin-top:22px">Éco-organismes</h4><ul><li><a href="metiers.html#eco-organismes">DEEE · DEA · VHU</a></li><li><a href="metiers.html#eco-organismes">Six filières REP</a></li></ul></div>
+          <div><h4>Particuliers &amp; artisans</h4><ul><li><a href="metiers.html#particuliers">Achat de métaux au détail</a></li><li><a href="metiers.html#particuliers">Location de bennes</a></li><li><a href="contact.html#sites">Trouver un centre</a></li></ul><h4 style="margin-top:22px">Comprendre</h4><ul><li><a href="metiers.html#procede">Le procédé, étape par étape</a></li><li><a href="innovation.html">Innovation &amp; industrie</a></li></ul></div>
+        </div>
+      </li>
+      <li><a class="nav-link" href="innovation.html">Innovation</a></li>
+      <li><a class="nav-link" href="engagements.html">Engagements</a></li>
+      <li><a class="nav-link" href="carrieres.html">Carrières</a></li>
+      <li><a class="nav-link" href="investisseurs.html">Investisseurs</a></li>
+    </ul>
+    <div class="header-right">
+      <div class="lang" aria-label="Langue"><button class="is-active" data-lang="fr">FR</button><button data-lang="en">EN</button><button data-lang="de">DE</button><button data-lang="es">ES</button></div>
+      <a class="btn btn-sm" href="contact.html">Contact <span class="arr"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></span></a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu">
+  <nav><a href="groupe.html"><span>01</span>Le Groupe</a><a href="metiers.html"><span>02</span>Nos métiers</a><a href="innovation.html"><span>03</span>Innovation</a><a href="engagements.html"><span>04</span>Engagements</a><a href="carrieres.html"><span>05</span>Carrières</a><a href="investisseurs.html"><span>06</span>Investisseurs</a><a href="contact.html"><span>07</span>Contact</a></nav>
+  <div class="mm-foot"><div class="lang"><button class="is-active" data-lang="fr">FR</button><button data-lang="en">EN</button><button data-lang="de">DE</button><button data-lang="es">ES</button></div><span>Euronext Paris · DBG</span></div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <img class="bg" src="assets/img/u-operateur-orange.jpg" alt="Opérateur en équipement de protection sur un site industriel">
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Accueil</a><span>/</span>Engagements</div>
+      <h1 class="display-xl"><span class="line"><span>L'exigence</span></span><span class="line"><span>se mesure.</span></span></h1>
+      <p class="lead">Climat, sécurité, qualité, social, conformité : des engagements chiffrés, audités et publiés chaque année. Tout le monde est formé et habilité, sur tous les sites, dans les dix-sept pays.</p>
+      <div class="hero-stats">
+        <div class="stat"><div class="num"><span data-count="7.6" data-decimals="1">0,0</span><small>Mt</small></div><div class="cap">CO₂ évité en 2023-2024</div></div>
+        <div class="stat"><div class="num">−<span data-count="20">0</span><small>%</small></div><div class="cap">Taux de fréquence des accidents depuis 2019</div></div>
+        <div class="stat"><div class="num"><span data-count="80.8" data-decimals="1">0,0</span><small>%</small></div><div class="cap">CA aligné sur la taxonomie UE</div></div>
+        <div class="stat"><div class="num"><span data-count="800">0</span><small>M€</small></div><div class="cap">Obligations vertes émises en 2026</div></div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="subnav"><div class="container"><ul>
+    <li><a href="#climat">Climat</a></li><li><a href="#securite">Sécurité &amp; qualité</a></li><li><a href="#social">Social</a></li><li><a href="#ethique">Éthique &amp; conformité</a></li>
+  </ul></div></nav>
+
+  <!-- CLIMAT -->
+  <section class="section theme-light" id="climat">
+    <div class="container">
+      <div class="section-head">
+        <div class="label reveal"><span class="idx">01</span> Climat</div>
+        <h2 class="display-l lines"><span class="line"><span>Une matière recyclée est</span></span><span class="line"><span>une matière qui n'est pas extraite.</span></span></h2>
+        <p class="lead reveal">Le métier de Derichebourg est, par nature, une activité d'atténuation du changement climatique : 80,8 % du chiffre d'affaires est aligné sur la taxonomie européenne.</p>
+      </div>
+      <div class="strip reveal" style="margin-bottom:clamp(48px,6vw,96px)">
+        <div><div class="num"><span data-count="7.6" data-decimals="1">0,0</span><small>Mt CO₂</small></div><div class="cap">évitées en 2023-2024 par les matières recyclées</div></div>
+        <div><div class="num"><span data-count="945000">0</span></div><div class="cap">Européens : l'équivalent de leurs émissions annuelles</div></div>
+        <div><div class="num"><span data-count="2">0</span><small>Mt</small></div><div class="cap">transportées par rail, mer et fleuve chaque année</div></div>
+        <div><div class="num"><span data-count="800">0</span><small>M€</small></div><div class="cap">d'obligations vertes, cadre de financement vert (juin 2026)</div></div>
+      </div>
+      <div class="grid">
+        <div class="col-6 reveal">
+          <h3 class="display-m">Ce que le métal recyclé économise</h3>
+          <p class="muted" style="margin:10px 0 24px;font-size:.9rem">Énergie et CO₂ évités par rapport au métal issu du minerai (analyse de cycle de vie FEDEREC 2023).</p>
+          <div class="acv" data-acv>
+            <div class="row"><span>Acier</span><div class="pair"><div class="bar"><div class="track"><span data-w="70"></span></div><b>−70 %</b></div><div class="bar"><div class="track e"><span data-w="63"></span></div><b>−63 %</b></div></div></div>
+            <div class="row"><span>Aluminium</span><div class="pair"><div class="bar"><div class="track"><span data-w="92"></span></div><b>−92 %</b></div><div class="bar"><div class="track e"><span data-w="93"></span></div><b>−93 %</b></div></div></div>
+            <div class="row"><span>Cuivre</span><div class="pair"><div class="bar"><div class="track"><span data-w="74"></span></div><b>−74 %</b></div><div class="bar"><div class="track e"><span data-w="58"></span></div><b>−58 %</b></div></div></div>
+            <div class="row"><span>Zinc</span><div class="pair"><div class="bar"><div class="track"><span data-w="46"></span></div><b>−46 %</b></div><div class="bar"><div class="track e"><span data-w="28"></span></div><b>−28 %</b></div></div></div>
+            <div class="row"><span>Plomb</span><div class="pair"><div class="bar"><div class="track"><span data-w="46"></span></div><b>−46 %</b></div><div class="bar"><div class="track e"><span data-w="58"></span></div><b>−58 %</b></div></div></div>
+          </div>
+          <div class="acv-legend"><span><i style="background:#d52b1e"></i>CO₂ évité</span><span><i style="background:#2a2a30"></i>Énergie économisée</span></div>
+        </div>
+        <div class="col-6 reveal">
+          <h3 class="display-m">Trajectoire des émissions évitées</h3>
+          <p class="muted" style="margin:10px 0 24px;font-size:.9rem">L'indicateur suit les volumes traités : plus le groupe recycle, plus il évite.</p>
+          <div class="traj" style="background:#fff;padding:24px;border:1px solid rgba(0,0,0,.08)">
+            <svg viewBox="0 0 480 240">
+              <line class="g" x1="30" y1="200" x2="460" y2="200"/><line class="g" x1="30" y1="140" x2="460" y2="140"/><line class="g" x1="30" y1="80" x2="460" y2="80"/>
+              <path class="ar" d="M60 128 L150 138 L270 84 L400 102 L400 200 L60 200z"/>
+              <path class="ln" d="M60 128 L150 138 L270 84 L400 102"/>
+              <circle class="dot" cx="60" cy="128" r="4.5"/><circle class="dot" cx="150" cy="138" r="4.5"/><circle class="dot" cx="270" cy="84" r="4.5"/><circle class="dot" cx="400" cy="102" r="5.5" style="fill:#d52b1e"/>
+              <text class="v" x="60" y="116" text-anchor="middle">5,8 Mt</text><text class="v" x="150" y="156" text-anchor="middle">5,3 Mt</text><text class="v" x="270" y="72" text-anchor="middle">8,5 Mt</text><text class="v" x="400" y="90" text-anchor="middle">7,6 Mt</text>
+              <text x="60" y="222" text-anchor="middle">2019</text><text x="150" y="222" text-anchor="middle">2020</text><text x="270" y="222" text-anchor="middle">2022</text><text x="400" y="222" text-anchor="middle">2024</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SÉCURITÉ & QUALITÉ -->
+  <section class="section" id="securite">
+    <div class="tech-grid"></div>
+    <div class="container">
+      <div class="section-head">
+        <div class="label reveal"><span class="idx">02</span> Sécurité &amp; qualité</div>
+        <h2 class="display-l lines"><span class="line"><span>Zéro accident :</span></span><span class="line"><span>l'objectif, pas le slogan.</span></span></h2>
+        <p class="lead reveal">Une politique sécurité commune signée par la direction générale, des systèmes de management ISO 45001 déployés site après site, et un indicateur publié chaque année : le taux de fréquence des accidents.</p>
+      </div>
+      <div class="grid" style="align-items:center">
+        <div class="col-7 reveal tf-big" style="background:var(--charbon);border:1px solid var(--ligne);padding:32px">
+          <div class="label no-bar" style="margin-bottom:18px">Taux de fréquence des accidents du travail</div>
+          <svg viewBox="0 0 640 260">
+            <line class="g" x1="40" y1="220" x2="620" y2="220"/><line class="g" x1="40" y1="160" x2="620" y2="160"/><line class="g" x1="40" y1="100" x2="620" y2="100"/><line class="g" x1="40" y1="40" x2="620" y2="40"/>
+            <line class="goal" x1="40" y1="200" x2="620" y2="200"/><text x="620" y="194" text-anchor="end">Objectif : zéro accident</text>
+            <path class="ln" d="M80 52 L200 86 L320 110 L440 126 L560 132"/>
+            <circle class="dot" cx="80" cy="52" r="5"/><circle class="dot" cx="200" cy="86" r="5"/><circle class="dot" cx="320" cy="110" r="5"/><circle class="dot" cx="440" cy="126" r="5"/><circle class="dot" cx="560" cy="132" r="6.5" style="fill:#d52b1e"/>
+            <text class="v" x="80" y="40" text-anchor="middle">34,6</text><text class="v" x="200" y="74" text-anchor="middle">≈ 32</text><text class="v" x="320" y="98" text-anchor="middle">≈ 30</text><text class="v" x="440" y="114" text-anchor="middle">28,1</text><text class="v" x="560" y="120" text-anchor="middle" style="fill:#d52b1e">27,5</text>
+            <text x="80" y="244" text-anchor="middle">2019</text><text x="200" y="244" text-anchor="middle">2021</text><text x="320" y="244" text-anchor="middle">2023</text><text x="440" y="244" text-anchor="middle">2024</text><text x="560" y="244" text-anchor="middle">2024-25</text>
+          </svg>
+          <p class="muted" style="font-size:.74rem;margin-top:14px;font-family:var(--font-mono);letter-spacing:.04em">− 20 % en six ans. Points intermédiaires 2021 et 2023 indicatifs, à compléter avec les DEU correspondants.</p>
+        </div>
+        <div class="col-5 reveal">
+          <div class="proofs">
+            <div class="proof"><span class="idx">01</span><div><strong>Politique commune</strong><p>Une politique sécurité groupe signée par la direction générale, déclinée sur chaque site, avec l'objectif zéro accident.</p></div></div>
+            <div class="proof"><span class="idx">02</span><div><strong>Formation</strong><p>137 700 heures de formation, dont plus de 59 000 dédiées à la sécurité, au dernier chiffre groupe publié (2019). Chiffre 2025 à actualiser.</p></div></div>
+            <div class="proof"><span class="idx">03</span><div><strong>Systèmes de management</strong><p>ISO 9001 (qualité), ISO 14001 (environnement) et ISO 45001 (santé-sécurité) déployés progressivement ; 14 chantiers Ecore certifiés 14001 et 17 certifiés 9001 à l'acquisition.</p></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:clamp(48px,6vw,96px)">
+        <h3 class="display-m reveal" style="margin-bottom:10px">Des métiers réglementés, donc des habilitations partout</h3>
+        <p class="lead reveal" style="max-width:60ch;margin-bottom:28px">Le recyclage des métaux est une activité sous contrôle permanent. C'est en soi un argument de professionnalisme.</p>
+        <div class="badges" data-stagger="0.06">
+          <div class="badge"><span class="ic">ICPE</span><div><b>Installations classées</b><p>Chaque site est une installation classée pour la protection de l'environnement, sous arrêté préfectoral et inspection.</p></div></div>
+          <div class="badge"><span class="ic">VHU</span><div><b>Centres VHU agréés</b><p>Agrément préfectoral pour la dépollution et le démontage des véhicules hors d'usage.</p></div></div>
+          <div class="badge"><span class="ic">REP</span><div><b>Éco-organismes agréés par l'État</b><p>Traitement des DEEE et des autres filières sous contrat avec les éco-organismes.</p></div></div>
+          <div class="badge"><span class="ic">CACES</span><div><b>Conduite d'engins</b><p>Pelles, chargeuses, grappins, chariots : certificats d'aptitude obligatoires pour chaque conducteur.</p></div></div>
+          <div class="badge"><span class="ic">HAB</span><div><b>Habilitations électriques</b><p>Interventions sur installations électriques et lignes de traitement des DEEE.</p></div></div>
+          <div class="badge"><span class="ic">F-GAZ</span><div><b>Fluides frigorigènes</b><p>Attestations de capacité pour la récupération des fluides sur les lignes frigos et chauffe-eau.</p></div></div>
+          <div class="badge"><span class="ic">ADR</span><div><b>Matières dangereuses</b><p>Dépollution VHU, batteries, huiles : manipulation et transport sous réglementation.</p></div></div>
+          <div class="badge"><span class="ic">ISO</span><div><b>9001 · 14001 · 45001</b><p>Qualité, environnement, santé-sécurité : taux de sites certifiés à publier avec le client.</p></div></div>
+          <div class="badge"><span class="ic">CSRD</span><div><b>Reporting extra-financier audité</b><p>Premier état de durabilité CSRD publié en décembre 2025, plan de vigilance publié.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL -->
+  <section class="section theme-light" id="social">
+    <div class="container">
+      <div class="split">
+        <div class="text">
+          <div class="label reveal"><span class="idx">03</span> Social</div>
+          <h2 class="display-l lines" style="margin-top:22px"><span class="line"><span>Des emplois verts,</span></span><span class="line"><span>ancrés localement.</span></span></h2>
+          <p class="lead reveal">8 800 collaborateurs dans 17 pays, sur des sites industriels et périurbains impossibles à délocaliser. Des métiers qui s'apprennent, des parcours qui insèrent.</p>
+          <div class="proofs" data-stagger="0.1" style="margin-top:28px">
+            <div class="proof"><span class="idx">01</span><div><strong>Fédération Envie</strong><p>Partenariat historique avec l'économie sociale et solidaire : une centaine de personnes formées et insérées chaque année, avec des embauches régulières à l'issue des parcours.</p></div></div>
+            <div class="proof"><span class="idx">02</span><div><strong>Jeunes Pousses</strong><p>Programme de recrutement et de formation de jeunes diplômés aux métiers du recyclage.</p></div></div>
+            <div class="proof"><span class="idx">03</span><div><strong>Sensibilisation</strong><p>Actions auprès des collégiens, lycéens et étudiants : faire connaître des métiers d'avenir.</p></div></div>
+          </div>
+          <a class="btn" href="carrieres.html">Nous rejoindre <span class="arr"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></span></a>
+        </div>
+        <div class="media reveal-img"><img src="assets/img/envie-operateur.jpg" alt="Opérateur Envie sur une ligne DEEE Derichebourg" data-parallax="8"><span class="cap">Ligne DEEE · partenariat Envie</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉTHIQUE -->
+  <section class="section theme-charbon" id="ethique">
+    <div class="container">
+      <div class="section-head">
+        <div class="label reveal"><span class="idx">04</span> Éthique &amp; conformité</div>
+        <h2 class="display-l lines"><span class="line"><span>Un groupe coté,</span></span><span class="line"><span>familial, transparent.</span></span></h2>
+        <p class="lead reveal">La solidité d'un groupe qui publie tout : comptes audités, information réglementée, état de durabilité, plan de vigilance. Et la constance d'un actionnaire familial qui raisonne à trente ans.</p>
+      </div>
+      <div class="figures">
+        <div class="figure"><div class="tag"><span>Fonds propres</span><i>30/09/2025</i></div><div><div class="num"><span data-count="1.12" data-decimals="2">0,00</span><small>Md€</small></div><p class="cap">Dette nette ramenée à 683 M€, 415 M€ de liquidités disponibles.</p></div></div>
+        <div class="figure"><div class="tag"><span>Audit</span><i>3 cabinets</i></div><div><div class="num">EY · D&amp;A · BM&amp;A</div><p class="cap">Comptes audités par Ernst &amp; Young, Denjean &amp; Associés et BM&amp;A.</p></div></div>
+        <div class="figure accent"><div class="tag"><span>Taxonomie UE</span><i>CSRD 2025</i></div><div><div class="num"><span data-count="80.8" data-decimals="1">0,0</span><small>%</small></div><p class="cap">du chiffre d'affaires aligné sur l'atténuation du changement climatique. Premier exercice CSRD bouclé et audité.</p></div></div>
+        <div class="figure"><div class="tag"><span>Dividende</span><i>2024-2025</i></div><div><div class="num">0,13<small>€</small></div><p class="cap">par action, versé chaque année. Actionnaire familial de contrôle depuis 1996.</p></div></div>
+        <div class="figure span-6"><div class="tag"><span>Dispositifs</span><i>groupe</i></div><div><div class="num" style="font-size:clamp(1.4rem,2vw,2rem)">Plan de vigilance · Code de conduite · Dispositif d'alerte</div><p class="cap" style="max-width:none">Publiés et accessibles : devoir de vigilance sur la chaîne de valeur, lutte contre la corruption, protection des lanceurs d'alerte, sécurité des systèmes d'information renforcée depuis 2023.</p></div></div>
+        <div class="figure-img"><img src="assets/img/u-bobines-acier.jpg" alt="Bobines d'acier" loading="lazy"><span class="cap">Acier recyclé · matière aux spécifications</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="dual-cta" data-stagger="0.12">
+        <a href="investisseurs.html" class="red"><div><div class="label">Investisseurs</div><h3 style="margin-top:20px">Documents de référence.</h3><p style="margin-top:14px">Document d'enregistrement universel, état de durabilité, rapports financiers.</p></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></a>
+        <a href="carrieres.html"><div><div class="label">Carrières</div><h3 style="margin-top:20px">Travailler chez Derichebourg.</h3><p style="margin-top:14px">Des métiers d'avenir, formés et habilités, dans 455 sites.</p></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><img src="assets/logo/logo-derichebourg-blanc.svg" alt="Derichebourg"><p>Groupe industriel français du recyclage des métaux. 119 avenue du Général Michel Bizot, 75012 Paris.</p>
+        <div class="socials"><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a></div></div>
+      <div><h4>Le Groupe</h4><ul><li><a href="groupe.html#histoire">Histoire</a></li><li><a href="groupe.html#gouvernance">Gouvernance</a></li><li><a href="groupe.html#chiffres">Chiffres clés</a></li><li><a href="groupe.html#implantations">Implantations</a></li><li><a href="groupe.html#valeurs">Valeurs</a></li></ul></div>
+      <div><h4>Nos métiers</h4><ul><li><a href="metiers.html#entreprises">Industriels &amp; entreprises</a></li><li><a href="metiers.html#collectivites">Collectivités</a></li><li><a href="metiers.html#eco-organismes">Éco-organismes</a></li><li><a href="metiers.html#particuliers">Particuliers &amp; artisans</a></li><li><a href="metiers.html#procede">Le procédé</a></li></ul></div>
+      <div><h4>Groupe</h4><ul><li><a href="innovation.html">Innovation &amp; industrie</a></li><li><a href="engagements.html">Engagements</a></li><li><a href="carrieres.html">Carrières</a></li><li><a href="investisseurs.html">Investisseurs</a></li><li><a href="index.html#actualites">Presse</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="contact.html">Nous contacter</a></li><li><a href="contact.html#sites">Trouver un site</a></li><li><a href="investisseurs.html#contact">Relations investisseurs</a></li><li><a href="#">Presse &amp; médias</a></li></ul></div>
+    </div>
+    <div class="footer-giant" aria-hidden="true">Derichebourg</div>
+    <div class="footer-bottom"><span class="ticker-dbg"><i></i> Euronext Paris · DBG · ISIN FR0000053381</span><ul><li><a href="#">Mentions légales</a></li><li><a href="#">Données personnelles</a></li><li><a href="#">Cookies</a></li><li><a href="#">Accessibilité</a></li><li><a href="#">Éthique &amp; alerte</a></li></ul><span>© <span data-year>2026</span> Derichebourg SA</span></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  new IntersectionObserver((ens, io) => ens.forEach((en) => { if (!en.isIntersecting) return; en.target.querySelectorAll('span[data-w]').forEach((s) => (s.style.width = s.dataset.w + '%')); io.unobserve(en.target); }), { threshold: .3 }).observe(document.querySelector('[data-acv]'));
+</script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nos métiers — Derichebourg</title>
+  <meta name="description" content="Ferrailles, métaux non ferreux, VHU, DEEE, câbles, démolition industrielle, collecte et nettoiement urbain : les métiers de Derichebourg par public et le procédé de recyclage expliqué.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/embleme.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .pr-rotor { animation: spin 3.2s linear infinite; }
+    .pr-drum { animation: spin 5s linear infinite; transform-origin: center; transform-box: fill-box; }
+    .pr-drum.rev { animation-direction: reverse; }
+    .pr-belt { stroke-dasharray: 6 6; animation: belt 1.2s linear infinite; }
+    @keyframes belt { to { stroke-dashoffset: -12; } }
+    .pr-field { stroke: var(--rouge); stroke-dasharray: 2 5; opacity: .7; animation: belt 1.6s linear infinite; }
+    .pr-glow { fill: var(--rouge); opacity: .16; filter: blur(14px); }
+    .pr-warn { animation: blink 1.4s ease-in-out infinite; }
+    @keyframes blink { 50% { opacity: .2; } }
+  </style>
+</head>
+<body>
+<div class="veil"></div>
+<div class="noise"></div>
+<div class="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div><div class="cursor-label">Voir</div></div>
+
+<header class="header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Derichebourg — accueil"><img src="assets/logo/logo-derichebourg-blanc.svg" alt="Derichebourg"></a>
+    <ul class="nav">
+      <li><a class="nav-link" href="groupe.html">Le Groupe</a></li>
+      <li class="has-mega">
+        <a class="nav-link" href="metiers.html">Nos métiers <svg class="chev" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 3.5l3 3 3-3"/></svg></a>
+        <div class="mega">
+          <div class="mega-feature"><div class="label">Toute la chaîne</div><p class="display-s" style="margin-top:10px">De la benne au lingot, un seul interlocuteur.</p><p>Quatre publics, onze prestations, 455 sites.</p><img src="assets/img/aluminium-lingots.jpg" alt=""></div>
+          <div><h4>Industriels &amp; entreprises</h4><ul><li><a href="#entreprises">Collecte et bennes sur site</a></li><li><a href="#ferrailles">Ferrailles &amp; aciéries</a></li><li><a href="#non-ferreux">Non ferreux, aluminium, inox</a></li><li><a href="#vhu">Véhicules hors d'usage</a></li><li><a href="#demolition">Démolition industrielle</a></li><li><a href="#confidentiel">Destructions confidentielles</a></li><li><a href="#site-global">Gestion globale de site</a></li></ul></div>
+          <div><h4>Collectivités</h4><ul><li><a href="#collectivites">Collecte des déchets</a></li><li><a href="#collectivites">Nettoiement urbain</a></li><li><a href="#collectivites">Déchèteries &amp; centres de tri</a></li></ul><h4 style="margin-top:22px">Éco-organismes</h4><ul><li><a href="#eco-organismes">DEEE · DEA · VHU</a></li><li><a href="#eco-organismes">Six filières REP</a></li></ul></div>
+          <div><h4>Particuliers &amp; artisans</h4><ul><li><a href="#particuliers">Achat de métaux au détail</a></li><li><a href="#particuliers">Location de bennes</a></li><li><a href="contact.html#sites">Trouver un centre</a></li></ul><h4 style="margin-top:22px">Comprendre</h4><ul><li><a href="#procede">Le procédé, étape par étape</a></li><li><a href="innovation.html">Innovation &amp; industrie</a></li></ul></div>
+        </div>
+      </li>
+      <li><a class="nav-link" href="innovation.html">Innovation</a></li>
+      <li><a class="nav-link" href="engagements.html">Engagements</a></li>
+      <li><a class="nav-link" href="carrieres.html">Carrières</a></li>
+      <li><a class="nav-link" href="investisseurs.html">Investisseurs</a></li>
+    </ul>
+    <div class="header-right">
+      <div class="lang" aria-label="Langue"><button class="is-active" data-lang="fr">FR</button><button data-lang="en">EN</button><button data-lang="de">DE</button><button data-lang="es">ES</button></div>
+      <a class="btn btn-sm" href="contact.html">Contact <span class="arr"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></span></a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu">
+  <nav><a href="groupe.html"><span>01</span>Le Groupe</a><a href="metiers.html"><span>02</span>Nos métiers</a><a href="innovation.html"><span>03</span>Innovation</a><a href="engagements.html"><span>04</span>Engagements</a><a href="carrieres.html"><span>05</span>Carrières</a><a href="investisseurs.html"><span>06</span>Investisseurs</a><a href="contact.html"><span>07</span>Contact</a></nav>
+  <div class="mm-foot"><div class="lang"><button class="is-active" data-lang="fr">FR</button><button data-lang="en">EN</button><button data-lang="de">DE</button><button data-lang="es">ES</button></div><span>Euronext Paris · DBG</span></div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <img class="bg" src="assets/img/ferraille-montagne.jpg" alt="Montagne de ferraille broyée">
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Accueil</a><span>/</span>Nos métiers</div>
+      <h1 class="display-xl"><span class="line"><span>Un interlocuteur,</span></span><span class="line"><span>toute la chaîne.</span></span></h1>
+      <p class="lead">Quatre publics, onze prestations, une même promesse : capter le gisement là où il naît, le transformer dans nos installations et livrer une matière première aux spécifications de l'industrie.</p>
+      <div class="hero-stats">
+        <div class="stat"><div class="num">4</div><div class="cap">Publics</div></div>
+        <div class="stat"><div class="num">11</div><div class="cap">Prestations</div></div>
+        <div class="stat"><div class="num">6</div><div class="cap">Filières REP opérées</div></div>
+        <div class="stat"><div class="num"><span data-count="5.1" data-decimals="1">0,0</span><small>Mt</small></div><div class="cap">Métaux traités par an</div></div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="subnav"><div class="container"><ul>
+    <li><a href="#publics">Par public</a></li><li><a href="#procede">Le procédé</a></li><li><a href="#filieres">Nos filières</a></li><li><a href="#contact-metiers">Contact</a></li>
+  </ul></div></nav>
+
+  <!-- PAR PUBLIC -->
+  <section class="section" id="publics">
+    <div class="tech-grid"></div>
+    <div class="container" data-tabs>
+      <div class="section-head">
+        <div class="label reveal"><span class="idx">01</span> Nos solutions par public</div>
+        <h2 class="display-l lines"><span class="line"><span>À chaque public,</span></span><span class="line"><span>ses prestations.</span></span></h2>
+        <p class="lead reveal">Un industriel n'attend pas la même chose qu'une intercommunalité ou qu'un éco-organisme. Notre offre est organisée pour que chacun trouve immédiatement la sienne.</p>
+      </div>
+      <div class="tabs">
+        <button data-tab="entreprises" class="is-active" id="entreprises">Industriels &amp; entreprises <small>07</small></button>
+        <button data-tab="collectivites" id="collectivites">Collectivités <small>04</small></button>
+        <button data-tab="eco-organismes" id="eco-organismes">Éco-organismes <small>03</small></button>
+        <button data-tab="particuliers" id="particuliers">Particuliers &amp; artisans <small>02</small></button>
+      </div>
+
+      <div class="tab-panel is-active" data-panel="entreprises">
+        <div class="services">
+          <a class="service" href="#ferrailles"><img src="assets/img/collecte-industrielle.jpg" alt=""><div><span class="idx">01</span><h3>Collecte &amp; bennes sur site</h3><p>Bacs, bennes et compacteurs posés dans l'enceinte de votre usine, enlèvements planifiés, traçabilité par bordereau.</p></div><div class="kpi"><div><b>866</b><span>camions</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+          <a class="service" href="#ferrailles"><img src="assets/img/ferraille-montagne.jpg" alt=""><div><span class="idx">02</span><h3>Filière ferraille</h3><p>Collecte, tri, cisaillage, broyage et préparation de ferrailles aux spécifications des aciéries électriques.</p></div><div class="kpi"><div><b>4,4 Mt</b><span>acier recyclé / an</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+          <a class="service" href="#non-ferreux"><img src="assets/img/aluminium-lingots.jpg" alt=""><div><span class="idx">03</span><h3>Non ferreux, aluminium, inox, métaux précieux</h3><p>Tri et affinage du cuivre, de l'aluminium, du laiton, de l'inox, du zinc et du plomb ; fonderie d'aluminium intégrée.</p></div><div class="kpi"><div><b>695 100 t</b><span>par an</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+          <a class="service" href="#vhu"><img src="assets/img/vhu-compactes.jpg" alt=""><div><span class="idx">04</span><h3>Véhicules hors d'usage</h3><p>Centres agréés, dépollution, démontage, broyage. Partenaire du schéma « Recycler Mon Véhicule » et de Volkswagen.</p></div><div class="kpi"><div><b>643 700</b><span>VHU / an</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+          <a class="service" href="#demolition"><img src="assets/img/demolition-navire.jpg" alt=""><div><span class="idx">05</span><h3>Démolition industrielle &amp; déconstruction</h3><p>Démantèlement d'usines, de lignes de production, de navires et d'ouvrages métalliques, avec valorisation intégrale des matériaux.</p></div><div class="kpi"><div><b>100 %</b><span>matière valorisée</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+          <a class="service" href="#confidentiel"><img src="assets/img/destruction-confidentielle.jpg" alt=""><div><span class="idx">06</span><h3>Destructions confidentielles</h3><p>Archives, prototypes, stocks invendus, supports numériques : destruction certifiée, filmée sur demande, certificat remis.</p></div><div class="kpi"><div><b>Certifié</b><span>procès-verbal</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+          <a class="service" href="#site-global"><img src="assets/img/blocs-moteurs.jpg" alt=""><div><span class="idx">07</span><h3>Gestion globale sur site industriel</h3><p>Derichebourg s'installe dans votre usine : plateformes intégrées chez les sidérurgistes et les constructeurs automobiles, gestion de toutes les chutes de production.</p></div><div class="kpi"><div><b>In situ</b><span>sidérurgie · automobile</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+        </div>
+      </div>
+      <div class="tab-panel" data-panel="collectivites">
+        <div class="services">
+          <a class="service" href="#collecte"><img src="assets/img/collecte-marseille.jpg" alt=""><div><span class="idx">01</span><h3>Collecte des déchets ménagers</h3><p>Polyurbaine en France (Paris, Marseille), San Germano en Italie, Derichebourg Canada à Montréal : des marchés de grandes métropoles tenus dans la durée.</p></div><div class="kpi"><div><b>Paris · Marseille · Montréal</b><span>références</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+          <a class="service" href="#collecte"><img src="assets/img/balayeuses-notre-dame.jpg" alt=""><div><span class="idx">02</span><h3>Nettoiement urbain</h3><p>Balayage mécanisé, lavage, propreté de l'espace public avec une flotte aux dernières normes.</p></div><div class="kpi"><div><b>20,6 %</b><span>marge = capacité d'investir</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+          <a class="service" href="#collecte"><img src="assets/img/camion-decheterie.jpg" alt=""><div><span class="idx">03</span><h3>Gestion des déchèteries</h3><p>Exploitation pour le compte des intercommunalités : accueil, tri, évacuation et valorisation des flux.</p></div><div class="kpi"><div><b>ICPE</b><span>sites sous arrêté</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+          <a class="service" href="#collecte"><img src="assets/img/plastiques-tri.jpg" alt=""><div><span class="idx">04</span><h3>Centres de tri</h3><p>Tri des collectes sélectives et préparation des matières pour les filières de recyclage.</p></div><div class="kpi"><div><b>184 M€</b><span>CA services aux collectivités</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+        </div>
+      </div>
+      <div class="tab-panel" data-panel="eco-organismes">
+        <div class="services">
+          <a class="service" href="#deee"><img src="assets/img/deee-ligne-frigos.jpg" alt=""><div><span class="idx">01</span><h3>DEEE : électroménager &amp; électronique</h3><p>Lignes frigos, ligne chauffe-eau de Bonneuil-sur-Marne, traitement sous contrat avec les éco-organismes agréés. Partenaire historique de la Fédération Envie.</p></div><div class="kpi"><div><b>376 000 t</b><span>par an</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+          <a class="service" href="#deee"><img src="assets/img/deee-lave-linge.jpg" alt=""><div><span class="idx">02</span><h3>Ameublement (DEA) &amp; nouvelles filières</h3><p>Ameublement, bâtiment (PMCB), articles de sport et loisirs, bricolage et jardin : un interlocuteur unique sur six filières REP.</p></div><div class="kpi"><div><b>6</b><span>filières REP</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+          <a class="service" href="#vhu"><img src="assets/img/vhu-centre.jpg" alt=""><div><span class="idx">03</span><h3>VHU &amp; batteries</h3><p>Schéma collectif « Recycler Mon Véhicule », schéma individuel Volkswagen, coentreprise LG Energy Solution pour les batteries lithium-ion.</p></div><div class="kpi"><div><b>643 700</b><span>VHU / an</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+        </div>
+      </div>
+      <div class="tab-panel" data-panel="particuliers">
+        <div class="services">
+          <a class="service" href="contact.html#sites"><img src="assets/img/metaux-precieux.jpg" alt=""><div><span class="idx">01</span><h3>Achat de métaux au détail</h3><p>Cuivre, laiton, aluminium, inox, ferraille : vendez vos métaux au juste prix dans le centre le plus proche, avec pesée certifiée et paiement tracé.</p></div><div class="kpi"><div><b>455</b><span>implantations</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+          <a class="service" href="contact.html#sites"><img src="assets/img/bennes-camion.jpg" alt=""><div><span class="idx">02</span><h3>Location de bennes</h3><p>Pour un chantier, un débarras ou un déménagement : dépôt, enlèvement et valorisation de la benne par Derichebourg.</p></div><div class="kpi"><div><b>48 h</b><span>mise à disposition</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LE PROCÉDÉ -->
+  <section class="theme-charbon" id="procede">
+    <div class="container" style="padding-top:clamp(80px,10vw,160px)">
+      <div class="section-head">
+        <div class="label reveal"><span class="idx">02</span> Le procédé</div>
+        <h2 class="display-l lines"><span class="line"><span>De la carcasse à la matière</span></span><span class="line"><span>aux spécifications.</span></span></h2>
+        <p class="lead reveal">Défilez pour suivre la matière : réception, cisaillage, broyage, séparation magnétique, courants de Foucault, puis trois destinations. Chaque fragment est trié par sa nature physique, pas à la main.</p>
+      </div>
+    </div>
+    <div class="process-pin">
+      <div class="process-stage">
+        <div class="container">
+          <svg viewBox="0 0 1200 560" aria-label="Schéma du procédé de recyclage des métaux">
+            <defs>
+              <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5 0 10z" fill="rgba(255,255,255,.6)"/></marker>
+              <marker id="arr-r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5 0 10z" fill="#d52b1e"/></marker>
+            </defs>
+
+            <!-- Chemins de matière (invisibles) -->
+            <path id="route-fer" d="M60 300 L170 300 C200 300 210 300 240 300 L330 300 L365 300 L390 300 L400 260 L430 240 L460 240 L470 250 C480 330 520 330 560 330 L600 330 L650 330 L690 330 C700 300 720 250 740 240 L790 240 L820 240 L1000 240 L1040 240 L1090 240" fill="none" stroke="none"/>
+            <path id="route-alu" d="M60 300 L170 300 C200 300 210 300 240 300 L330 300 L365 300 L390 300 L400 260 L430 240 L460 240 L470 250 C480 330 520 330 560 330 L600 330 L650 330 L700 330 L760 330 L820 330 C860 330 870 330 900 325 C930 320 960 320 990 330 L1040 330 L1090 330" fill="none" stroke="none"/>
+            <path id="route-cu" d="M60 300 L170 300 C200 300 210 300 240 300 L330 300 L365 300 L390 300 L400 260 L430 240 L460 240 L470 250 C480 330 520 330 560 330 L600 330 L650 330 L700 330 L760 330 L820 330 C850 330 870 335 890 345 C920 355 950 355 990 345 L1040 340 L1090 335" fill="none" stroke="none"/>
+            <path id="route-res" d="M60 300 L170 300 C200 300 210 300 240 300 L330 300 L365 300 L390 300 L400 260 L430 240 L460 240 L470 250 C480 330 520 330 560 330 L600 330 L650 330 L700 330 L760 330 L830 336 C850 350 860 380 870 400 C880 420 900 428 960 428 L1040 428 L1090 428" fill="none" stroke="none"/>
+
+            <!-- Étape 1 : réception & contrôle -->
+            <g class="pr-stage" data-stage="0">
+              <text class="pr-label" x="40" y="180">01 · Réception</text>
+              <text class="pr-label big" x="40" y="200">Pesée &amp; contrôle</text>
+              <!-- pont-bascule -->
+              <rect x="30" y="318" width="190" height="10" class="pr-fill-2 pr-line"/>
+              <path d="M30 328v14M220 328v14M40 342h170" class="pr-line"/>
+              <!-- camion -->
+              <rect x="56" y="262" width="96" height="46" class="pr-fill pr-line"/>
+              <path d="M152 274h30l16 18v16h-46z" class="pr-fill-2 pr-line"/>
+              <circle cx="80" cy="314" r="8" class="pr-line"/><circle cx="130" cy="314" r="8" class="pr-line"/><circle cx="182" cy="314" r="8" class="pr-line"/>
+              <!-- portique radioactivité -->
+              <path d="M200 340V236h40v104" class="pr-line pr-red"/>
+              <path d="M206 250h28M206 262h28" class="pr-line pr-red pr-warn" stroke-width="1"/>
+              <text class="pr-label" x="196" y="214" font-size="8">Portique</text>
+              <text class="pr-label" x="196" y="224" font-size="8">radioactivité</text>
+              <text class="pr-label" x="40" y="368" font-size="8.5">Pesée · bordereau</text>
+            </g>
+
+            <!-- Étape 2 : cisaillage / pré-découpe -->
+            <g class="pr-stage" data-stage="1">
+              <text class="pr-label" x="262" y="180">02 · Cisaillage</text>
+              <text class="pr-label big" x="262" y="200">Presse-cisaille</text>
+              <rect x="262" y="240" width="110" height="100" class="pr-fill pr-line"/>
+              <path d="M262 290h110" class="pr-line" stroke-dasharray="3 4"/>
+              <!-- lames -->
+              <path d="M300 240v48l18 8 18-8v-48" class="pr-line pr-red"/>
+              <path d="M300 340v-38l18-8 18 8v38" class="pr-line"/>
+              <path d="M318 226v14" class="pr-line thick"/>
+              <path d="M310 226h16" class="pr-line thick"/>
+              <text class="pr-label" x="262" y="384" font-size="8.5">102 presses-cisailles</text>
+            </g>
+
+            <!-- Étape 3 : broyeur à marteaux -->
+            <g class="pr-stage" data-stage="2">
+              <text class="pr-label" x="400" y="180">03 · Broyage</text>
+              <text class="pr-label big" x="400" y="200">Broyeur à marteaux</text>
+              <!-- trémie -->
+              <path d="M392 212h90l-14 36h-62z" class="pr-fill-2 pr-line"/>
+              <!-- carter -->
+              <path d="M400 248h76v10a48 48 0 0 1-96 0v-10h20" class="pr-fill pr-line thick"/>
+              <path d="M404 258h68" class="pr-line"/>
+              <!-- rotor -->
+              <g transform="translate(428 296)">
+                <circle r="3" fill="#fff" opacity=".5"/>
+                <g class="pr-rotor" transform-origin="0 0">
+                  <path d="M0 0L0 -30M0 0L26 15M0 0L-26 15" class="pr-line thick"/>
+                  <rect x="-5" y="-40" width="10" height="12" class="pr-hammer"/>
+                  <rect x="24" y="8" width="10" height="12" class="pr-hammer" transform="rotate(120 29 14)"/>
+                  <rect x="-34" y="8" width="10" height="12" class="pr-hammer" transform="rotate(-120 -29 14)"/>
+                </g>
+                <circle r="34" class="pr-line" stroke-dasharray="4 6" opacity=".6"/>
+              </g>
+              <!-- grille & évacuation -->
+              <path d="M396 318q32 26 64 0" class="pr-line pr-red" stroke-dasharray="3 3"/>
+              <path d="M470 250 C480 330 520 330 560 330" class="pr-line pr-belt" stroke-dasharray="6 6"/>
+              <text class="pr-label" x="400" y="368" font-size="8.5">35 broyeurs · fragments calibrés</text>
+            </g>
+
+            <!-- Étape 4 : séparation magnétique -->
+            <g class="pr-stage" data-stage="3">
+              <text class="pr-label" x="570" y="180">04 · Séparation magnétique</text>
+              <text class="pr-label big" x="570" y="200">Overband &amp; tambour</text>
+              <!-- convoyeur -->
+              <path d="M560 336h140" class="pr-line pr-belt thick"/>
+              <path d="M560 344h140" class="pr-line" opacity=".4"/>
+              <!-- tambour magnétique -->
+              <g transform="translate(690 286)">
+                <circle r="30" class="pr-fill-2 pr-line thick pr-drum"/>
+                <circle r="30" class="pr-line pr-drum" stroke-dasharray="14 10" opacity=".8"/>
+                <path d="M-12 -6h8v12h-8zM4 -6h8v12H4z" class="pr-redf" opacity=".9"/>
+                <path d="M-12 -6h24" class="pr-line pr-red"/>
+              </g>
+              <!-- champ -->
+              <path d="M640 300q25 -60 90 -50" class="pr-line pr-field"/>
+              <path d="M650 316q30 -50 80 -40" class="pr-line pr-field"/>
+              <!-- convoyeur haut ferreux -->
+              <path d="M740 244h100" class="pr-line pr-belt thick"/>
+              <text class="pr-label" x="570" y="384" font-size="8.5">Le fer remonte, le reste continue</text>
+              <text class="pr-label" x="746" y="232" font-size="8.5">Ferreux →</text>
+            </g>
+
+            <!-- Étape 5 : courants de Foucault & tri -->
+            <g class="pr-stage" data-stage="4">
+              <text class="pr-label" x="760" y="180">05 · Courants de Foucault</text>
+              <text class="pr-label big" x="760" y="200">Tri densimétrique &amp; optique</text>
+              <path d="M760 336h60" class="pr-line pr-belt thick"/>
+              <g transform="translate(830 320)">
+                <circle r="18" class="pr-fill-2 pr-line thick pr-drum rev"/>
+                <circle r="10" class="pr-line pr-red pr-drum rev" stroke-dasharray="3 3"/>
+              </g>
+              <!-- séparateur -->
+              <path d="M872 300v90" class="pr-line pr-red"/>
+              <path d="M905 340v60" class="pr-line" opacity=".6"/>
+              <!-- capteur optique -->
+              <path d="M930 280h40l-6 14h-28z" class="pr-fill-2 pr-line"/>
+              <path d="M950 294v20M944 314h12" class="pr-line pr-red" stroke-dasharray="2 3"/>
+              <text class="pr-label" x="760" y="400" font-size="8.5">Non ferreux éjectés par répulsion,</text>
+              <text class="pr-label" x="760" y="412" font-size="8.5">résidus séparés par densité et optique</text>
+            </g>
+
+            <!-- Étape 6 : sorties -->
+            <g class="pr-stage" data-stage="5">
+              <text class="pr-label" x="1000" y="180">06 · Matière aux spécifications</text>
+              <text class="pr-label big" x="1000" y="200">Trois destinations</text>
+              <g>
+                <rect x="1040" y="220" width="130" height="42" class="pr-fill pr-line"/>
+                <path d="M1052 254v-22l8-6v8l8-6v8l8-6v24" class="pr-line"/>
+                <text class="pr-label" x="1088" y="238" font-size="8">Aciérie</text><text class="pr-label" x="1088" y="250" font-size="8">électrique</text>
+              </g>
+              <g>
+                <rect x="1040" y="310" width="130" height="48" class="pr-fill pr-line pr-red"/>
+                <path d="M1052 346h30l-4-14h-22z" class="pr-line"/>
+                <path d="M1056 328l4-8h14l4 8" class="pr-line"/>
+                <text class="pr-label" x="1092" y="330" font-size="8">Fonderie ·</text><text class="pr-label" x="1092" y="342" font-size="8">affinage</text>
+              </g>
+              <g>
+                <rect x="1040" y="408" width="130" height="42" class="pr-fill pr-line"/>
+                <path d="M1052 440c0-10 6-14 8-20 2 6 8 10 8 20z" class="pr-line"/>
+                <text class="pr-label" x="1078" y="426" font-size="8">CSR · cimenterie</text><text class="pr-label" x="1078" y="438" font-size="8">valorisation</text>
+              </g>
+              <text class="pr-label" x="1000" y="480" font-size="8.5">5,1 Mt de métaux livrés par an</text>
+              <text class="pr-label" x="1000" y="492" font-size="8.5">Résidus valorisés : 31,5 % (objectif 40 %)</text>
+            </g>
+
+            <!-- Flèches directionnelles -->
+            <path d="M230 300h26" class="pr-line" marker-end="url(#arr)"/>
+            <path d="M376 300h14" class="pr-line" marker-end="url(#arr)"/>
+            <path d="M846 244h190" class="pr-line" marker-end="url(#arr)" opacity=".6"/>
+            <path d="M990 332h46" class="pr-line pr-red" marker-end="url(#arr-r)" opacity=".8"/>
+            <path d="M960 428h76" class="pr-line" marker-end="url(#arr)" opacity=".6"/>
+
+            <!-- Légende -->
+            <g transform="translate(40 520)">
+              <rect width="10" height="10" fill="#c9c9d0"/><text class="pr-label" x="16" y="9" font-size="8">Ferreux</text>
+              <rect x="80" width="10" height="10" fill="#f1f1f4"/><text class="pr-label" x="96" y="9" font-size="8">Aluminium</text>
+              <rect x="176" width="10" height="10" fill="#c8753f"/><text class="pr-label" x="192" y="9" font-size="8">Cuivre · laiton</text>
+              <rect x="290" width="10" height="10" fill="#5a5a63"/><text class="pr-label" x="306" y="9" font-size="8">Résidus de broyage</text>
+            </g>
+
+            <g class="pr-particles"></g>
+          </svg>
+        </div>
+        <div class="process-caption">
+          <div><b>01 · Réception</b>Pesée, portique radioactivité, caractérisation</div>
+          <div><b>02 · Cisaillage</b>Pré-découpe des pièces massives</div>
+          <div><b>03 · Broyage</b>Fragments calibrés par le rotor à marteaux</div>
+          <div><b>04 · Magnétique</b>Le fer remonte vers son convoyeur</div>
+          <div><b>05 · Foucault &amp; tri</b>Alu, cuivre, inox et résidus séparés</div>
+          <div><b>06 · Livraison</b>Aciérie, fonderie, valorisation énergétique</div>
+        </div>
+      </div>
+      <div class="process-spacer"></div>
+    </div>
+  </section>
+
+  <!-- FILIÈRES -->
+  <section class="section theme-light" id="filieres">
+    <div class="container">
+      <div class="section-head">
+        <div class="label reveal"><span class="idx">03</span> Nos filières</div>
+        <h2 class="display-l lines"><span class="line"><span>Dix lignes d'activité,</span></span><span class="line"><span>une même exigence.</span></span></h2>
+        <p class="lead reveal">Chaque filière a ses installations, ses agréments et ses filiales spécialisées : Inorec pour l'inox, Refinal pour l'aluminium, Corepa pour les DEEE, Polyurbaine pour les collectivités.</p>
+      </div>
+      <div class="accordion reveal">
+        <div class="acc-item is-open" id="ferrailles"><button class="acc-head"><span class="idx">01</span><h3>Ferrailles</h3><span class="tag">4,4 Mt d'acier recyclé / an</span><span class="plus"></span></button><div class="acc-body"><div><div class="acc-inner"><p>Collecte, tri, cisaillage, broyage et préparation de ferrailles aux spécifications des aciéries électriques. Plateformes in situ chez les sidérurgistes et les constructeurs automobiles. Environ 23 % du traitement des ferrailles en France.</p><div class="facts"><div><b>4,4 Mt</b><span>acier recyclé par an</span></div><div><b>35 · 102</b><span>broyeurs · presses-cisailles</span></div><div><b>−70 %</b><span>CO₂ vs acier de minerai</span></div></div><img src="assets/img/grappin-moteurs.jpg" alt="Grappin chargeant des blocs moteurs"></div></div></div></div>
+        <div class="acc-item" id="non-ferreux"><button class="acc-head"><span class="idx">02</span><h3>Non ferreux, aluminium, inox &amp; métaux précieux</h3><span class="tag">695 100 t / an · segment le plus rentable</span><span class="plus"></span></button><div class="acc-body"><div><div class="acc-inner"><p>Tri et affinage du cuivre, de l'aluminium, du laiton, de l'inox, du zinc et du plomb. Fonderie d'aluminium en France (73 480 t de lingots), affinerie de plomb en Espagne (36 350 t), filiales Inorec (inox) et Refinal (aluminium). Croissance de 19,6 % au premier semestre 2025-2026.</p><div class="facts"><div><b>73 480 t</b><span>lingots d'aluminium</span></div><div><b>36 350 t</b><span>lingots de plomb</span></div><div><b>−92 %</b><span>CO₂ aluminium recyclé</span></div></div><img src="assets/img/inox-copeaux.jpg" alt="Copeaux d'acier inoxydable"></div></div></div></div>
+        <div class="acc-item" id="vhu"><button class="acc-head"><span class="idx">03</span><h3>Véhicules hors d'usage</h3><span class="tag">643 700 VHU / an</span><span class="plus"></span></button><div class="acc-body"><div><div class="acc-inner"><p>Centres VHU agréés par les préfectures : dépollution (fluides, batteries, airbags), démontage des pièces réutilisables, broyage et séparation. Partenaire du schéma collectif « Recycler Mon Véhicule » (mars 2025) et du schéma individuel Volkswagen (juin 2025).</p><div class="facts"><div><b>643 700</b><span>VHU recyclés par an</span></div><div><b>Agréé</b><span>centres VHU préfectoraux</span></div><div><b>JV</b><span>LG Energy Solution · batteries</span></div></div><img src="assets/img/vhu-centre.jpg" alt="Véhicules en cours de dépollution"></div></div></div></div>
+        <div class="acc-item" id="deee"><button class="acc-head"><span class="idx">04</span><h3>DEEE &amp; ameublement</h3><span class="tag">376 000 t / an</span><span class="plus"></span></button><div class="acc-body"><div><div class="acc-inner"><p>Collecte et traitement pour les éco-organismes agréés : lignes frigos, ligne chauffe-eau de Bonneuil-sur-Marne (septembre 2025, deux lignes supplémentaires en construction), ameublement (DEA). Partenaire historique de la Fédération Envie pour l'insertion.</p><div class="facts"><div><b>376 000 t</b><span>DEEE par an</span></div><div><b>6</b><span>filières REP opérées</span></div><div><b>≈ 100</b><span>personnes insérées / an avec Envie</span></div></div><img src="assets/img/deee-lave-linge.jpg" alt="Lave-linge en attente de traitement"></div></div></div></div>
+        <div class="acc-item" id="cables"><button class="acc-head"><span class="idx">05</span><h3>Câbles cuivre &amp; batteries</h3><span class="tag">3 usines · 20 000 t/an chacune</span><span class="plus"></span></button><div class="acc-body"><div><div class="acc-inner"><p>Broyage et granulation des câbles : Saint-Marcel (2020), Escautpont (18 M€, inaugurée en juin 2024 avec le soutien de France Relance), Madrid (2025). Les grenailles de cuivre sont vendues directement aux fonderies. Coentreprise LG Energy Solution pour les batteries lithium-ion.</p><div class="facts"><div><b>20 000 t</b><span>par usine et par an</span></div><div><b>×6</b><span>demande européenne de cuivre d'ici 2030</span></div><div><b>−74 %</b><span>CO₂ cuivre recyclé</span></div></div><img src="assets/img/u-cables-cuivre.jpg" alt="Câbles cuivre à recycler"></div></div></div></div>
+        <div class="acc-item" id="demolition"><button class="acc-head"><span class="idx">06</span><h3>Démolition industrielle &amp; déconstruction</h3><span class="tag">usines · lignes · navires</span><span class="plus"></span></button><div class="acc-body"><div><div class="acc-inner"><p>Derichebourg démantèle des usines entières, des lignes de production, des ouvrages et des navires, avec dépollution, désamiantage coordonné et valorisation intégrale des matériaux dans ses propres installations.</p><div class="facts"><div><b>100 %</b><span>matériaux valorisés en interne</span></div><div><b>ICPE</b><span>sites d'accueil sous arrêté</span></div></div><img src="assets/img/demolition-navire.jpg" alt="Coque de navire en déconstruction"></div></div></div></div>
+        <div class="acc-item" id="confidentiel"><button class="acc-head"><span class="idx">07</span><h3>Destructions confidentielles</h3><span class="tag">archives · prototypes · invendus</span><span class="plus"></span></button><div class="acc-body"><div><div class="acc-inner"><p>Destruction certifiée d'archives, de prototypes, de stocks invendus et de supports numériques, filmée sur demande, avec procès-verbal de destruction et valorisation des matières.</p><div class="facts"><div><b>PV</b><span>certificat de destruction</span></div><div><b>Tracé</b><span>de l'enlèvement au broyage</span></div></div><img src="assets/img/destruction-confidentielle.jpg" alt="Documents broyés"></div></div></div></div>
+        <div class="acc-item" id="site-global"><button class="acc-head"><span class="idx">08</span><h3>Gestion globale sur site industriel</h3><span class="tag">in situ</span><span class="plus"></span></button><div class="acc-body"><div><div class="acc-inner"><p>Derichebourg s'installe dans l'usine du client : bacs et bennes, gestion de toutes les chutes de production, plateformes intégrées dans l'enceinte des sidérurgistes et des constructeurs automobiles. Une solide expérience des plateformes in situ.</p><div class="facts"><div><b>Un</b><span>interlocuteur pour tous les flux</span></div><div><b>17</b><span>pays</span></div></div><img src="assets/img/blocs-moteurs.jpg" alt="Blocs moteurs aluminium"></div></div></div></div>
+        <div class="acc-item" id="collecte"><button class="acc-head"><span class="idx">09</span><h3>Collecte, nettoiement, déchèteries</h3><span class="tag">184 M€ · marge 20,6 %</span><span class="plus"></span></button><div class="acc-body"><div><div class="acc-inner"><p>Collecte des déchets ménagers (Polyurbaine à Paris et Marseille, San Germano en Italie, Derichebourg Canada à Montréal), nettoiement urbain, gestion de déchèteries et de centres de tri pour les intercommunalités.</p><div class="facts"><div><b>184 M€</b><span>chiffre d'affaires 2025</span></div><div><b>20,6 %</b><span>marge d'EBITDA</span></div></div><img src="assets/img/camion-champs-elysees.jpg" alt="Camion Derichebourg sur les Champs-Élysées"></div></div></div></div>
+        <div class="acc-item" id="detail"><button class="acc-head"><span class="idx">10</span><h3>Achat au détail &amp; location de bennes</h3><span class="tag">particuliers · artisans</span><span class="plus"></span></button><div class="acc-body"><div><div class="acc-inner"><p>Réseau de centres d'achat de métaux et de produits en fin de vie en France et en Europe. Chacun devient acteur du recyclage : pesée certifiée, paiement tracé, matières acceptées et horaires publiés pour chaque site.</p><div class="facts"><div><b>455</b><span>implantations</span></div><div><b>48 h</b><span>mise à disposition d'une benne</span></div></div><img src="assets/img/bennes-camion.jpg" alt="Camion Derichebourg et bennes"></div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm" id="contact-metiers">
+    <div class="container">
+      <div class="dual-cta" data-stagger="0.12">
+        <a href="contact.html" class="red"><div><div class="label">Industriels · collectivités · éco-organismes</div><h3 style="margin-top:20px">Diagnostiquons vos flux.</h3><p style="margin-top:14px">Un interlocuteur dédié, une visite de site, une proposition chiffrée sous 48 h.</p></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></a>
+        <a href="innovation.html"><div><div class="label">Innovation &amp; industrie</div><h3 style="margin-top:20px">Les installations derrière le procédé.</h3><p style="margin-top:14px">Usines de câbles, lignes DEEE, fonderie, batteries : 131 M€ investis par an.</p></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><img src="assets/logo/logo-derichebourg-blanc.svg" alt="Derichebourg"><p>Groupe industriel français du recyclage des métaux. 119 avenue du Général Michel Bizot, 75012 Paris.</p>
+        <div class="socials"><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a></div></div>
+      <div><h4>Le Groupe</h4><ul><li><a href="groupe.html#histoire">Histoire</a></li><li><a href="groupe.html#gouvernance">Gouvernance</a></li><li><a href="groupe.html#chiffres">Chiffres clés</a></li><li><a href="groupe.html#implantations">Implantations</a></li><li><a href="groupe.html#valeurs">Valeurs</a></li></ul></div>
+      <div><h4>Nos métiers</h4><ul><li><a href="metiers.html#entreprises">Industriels &amp; entreprises</a></li><li><a href="metiers.html#collectivites">Collectivités</a></li><li><a href="metiers.html#eco-organismes">Éco-organismes</a></li><li><a href="metiers.html#particuliers">Particuliers &amp; artisans</a></li><li><a href="metiers.html#procede">Le procédé</a></li></ul></div>
+      <div><h4>Groupe</h4><ul><li><a href="innovation.html">Innovation &amp; industrie</a></li><li><a href="engagements.html">Engagements</a></li><li><a href="carrieres.html">Carrières</a></li><li><a href="investisseurs.html">Investisseurs</a></li><li><a href="index.html#actualites">Presse</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="contact.html">Nous contacter</a></li><li><a href="contact.html#sites">Trouver un site</a></li><li><a href="investisseurs.html#contact">Relations investisseurs</a></li><li><a href="#">Presse &amp; médias</a></li></ul></div>
+    </div>
+    <div class="footer-giant" aria-hidden="true">Derichebourg</div>
+    <div class="footer-bottom"><span class="ticker-dbg"><i></i> Euronext Paris · DBG · ISIN FR0000053381</span><ul><li><a href="#">Mentions légales</a></li><li><a href="#">Données personnelles</a></li><li><a href="#">Cookies</a></li><li><a href="#">Accessibilité</a></li><li><a href="#">Éthique &amp; alerte</a></li></ul><span>© <span data-year>2026</span> Derichebourg SA</span></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/process.js"></script>
+</body>
+</html>

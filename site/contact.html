@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Derichebourg</title>
+  <meta name="description" content="Contacter Derichebourg : industriels, collectivités, éco-organismes, particuliers, candidats, investisseurs. Trouver le site le plus proche parmi 455 implantations.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/embleme.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .contact-hero { padding-top: calc(var(--header-h) + clamp(48px, 8vw, 120px)); }
+    .contact-layout { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(32px, 6vw, 120px); align-items: start; }
+    .contact-layout .intro { position: sticky; top: 120px; }
+    .contact-layout .intro h1 { max-width: 12ch; }
+    .form-card { background: var(--charbon); border: 1px solid var(--ligne); padding: clamp(24px, 3vw, 44px); }
+    .form-card .who { font-family: var(--font-mono); font-size: .64rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gris); margin-bottom: 14px; }
+    .form-card .who b { color: #fff; font-weight: 500; }
+    .search { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: end; margin-bottom: 24px; }
+    .flagships { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; margin-top: 2px; }
+    .flagship { background: var(--charbon); border: 1px solid var(--ligne); padding: 20px; display: grid; gap: 8px; align-content: start; transition: border-color .3s; }
+    .flagship:hover { border-color: rgba(255,255,255,.35); }
+    .flagship span { font-family: var(--font-mono); font-size: .6rem; letter-spacing: .16em; text-transform: uppercase; color: var(--rouge); }
+    .flagship b { font-family: var(--font-display); text-transform: uppercase; font-size: .9rem; letter-spacing: .03em; line-height: 1.2; }
+    .flagship p { font-size: .8rem; color: var(--gris-2); line-height: 1.5; }
+    @media (max-width: 1000px) { .contact-layout { grid-template-columns: 1fr; } .contact-layout .intro { position: static; } .flagships { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) { .flagships { grid-template-columns: 1fr; } .search { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<div class="veil"></div>
+<div class="noise"></div>
+<div class="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div><div class="cursor-label">Voir</div></div>
+
+<header class="header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Derichebourg — accueil"><img src="assets/logo/logo-derichebourg-blanc.svg" alt="Derichebourg"></a>
+    <ul class="nav">
+      <li><a class="nav-link" href="groupe.html">Le Groupe</a></li>
+      <li class="has-mega">
+        <a class="nav-link" href="metiers.html">Nos métiers <svg class="chev" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 3.5l3 3 3-3"/></svg></a>
+        <div class="mega">
+          <div class="mega-feature"><div class="label">Toute la chaîne</div><p class="display-s" style="margin-top:10px">De la benne au lingot, un seul interlocuteur.</p><p>Quatre publics, onze prestations, 455 sites.</p><img src="assets/img/aluminium-lingots.jpg" alt=""></div>
+          <div><h4>Industriels &amp; entreprises</h4><ul><li><a href="metiers.html#entreprises">Collecte et bennes sur site</a></li><li><a href="metiers.html#ferrailles">Ferrailles &amp; aciéries</a></li><li><a href="metiers.html#non-ferreux">Non ferreux, aluminium, inox</a></li><li><a href="metiers.html#vhu">Véhicules hors d'usage</a></li><li><a href="metiers.html#demolition">Démolition industrielle</a></li><li><a href="metiers.html#confidentiel">Destructions confidentielles</a></li><li><a href="metiers.html#site-global">Gestion globale de site</a></li></ul></div>
+          <div><h4>Collectivités</h4><ul><li><a href="metiers.html#collectivites">Collecte des déchets</a></li><li><a href="metiers.html#collectivites">Nettoiement urbain</a></li><li><a href="metiers.html#collectivites">Déchèteries &amp; centres de tri</a></li></ul><h4 style="margin-top:22px">Éco-organismes</h4><ul><li><a href="metiers.html#eco-organismes">DEEE · DEA · VHU</a></li><li><a href="metiers.html#eco-organismes">Six filières REP</a></li></ul></div>
+          <div><h4>Particuliers &amp; artisans</h4><ul><li><a href="metiers.html#particuliers">Achat de métaux au détail</a></li><li><a href="metiers.html#particuliers">Location de bennes</a></li><li><a href="contact.html#sites">Trouver un centre</a></li></ul><h4 style="margin-top:22px">Comprendre</h4><ul><li><a href="metiers.html#procede">Le procédé, étape par étape</a></li><li><a href="innovation.html">Innovation &amp; industrie</a></li></ul></div>
+        </div>
+      </li>
+      <li><a class="nav-link" href="innovation.html">Innovation</a></li>
+      <li><a class="nav-link" href="engagements.html">Engagements</a></li>
+      <li><a class="nav-link" href="carrieres.html">Carrières</a></li>
+      <li><a class="nav-link" href="investisseurs.html">Investisseurs</a></li>
+    </ul>
+    <div class="header-right">
+      <div class="lang" aria-label="Langue"><button class="is-active" data-lang="fr">FR</button><button data-lang="en">EN</button><button data-lang="de">DE</button><button data-lang="es">ES</button></div>
+      <a class="btn btn-sm" href="contact.html">Contact <span class="arr"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></span></a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu">
+  <nav><a href="groupe.html"><span>01</span>Le Groupe</a><a href="metiers.html"><span>02</span>Nos métiers</a><a href="innovation.html"><span>03</span>Innovation</a><a href="engagements.html"><span>04</span>Engagements</a><a href="carrieres.html"><span>05</span>Carrières</a><a href="investisseurs.html"><span>06</span>Investisseurs</a><a href="contact.html"><span>07</span>Contact</a></nav>
+  <div class="mm-foot"><div class="lang"><button class="is-active" data-lang="fr">FR</button><button data-lang="en">EN</button><button data-lang="de">DE</button><button data-lang="es">ES</button></div><span>Euronext Paris · DBG</span></div>
+</div>
+
+<main>
+  <!-- FORMULAIRE -->
+  <section class="section contact-hero" id="formulaire">
+    <div class="tech-grid"></div>
+    <div class="container contact-layout">
+      <div class="intro">
+        <div class="crumbs label"><span class="idx">Contact</span></div>
+        <h1 class="display-xl" style="margin-top:22px"><span class="line"><span>Parlons</span></span><span class="line"><span>matière.</span></span></h1>
+        <p class="lead" style="margin-top:26px;max-width:40ch">Dites-nous qui vous êtes : le formulaire s'adapte et votre demande arrive directement à l'interlocuteur concerné. Réponse sous 48 h ouvrées.</p>
+        <div class="proofs" style="margin-top:32px" data-stagger="0.1">
+          <div class="proof"><span class="idx">01</span><div><strong>Un interlocuteur dédié</strong><p>Industriel, collectivité ou éco-organisme : un responsable commercial de votre région vous rappelle.</p></div></div>
+          <div class="proof"><span class="idx">02</span><div><strong>Une visite de site</strong><p>Diagnostic de vos flux, estimation des volumes, proposition chiffrée.</p></div></div>
+          <div class="proof"><span class="idx">03</span><div><strong>Siège</strong><p>DERICHEBOURG SA · 119 avenue du Général Michel Bizot · 75012 Paris</p></div></div>
+        </div>
+      </div>
+      <div class="form-card reveal">
+        <div class="who">Je suis <b data-who>un industriel</b></div>
+        <div class="segment" data-target="[data-who]" style="margin-bottom:32px">
+          <button class="is-active" data-value="industriel" data-label="un industriel" id="industriel">Industriel</button>
+          <button data-value="collectivite" data-label="une collectivité" id="collectivite">Collectivité</button>
+          <button data-value="eco" data-label="un éco-organisme" id="eco">Éco-organisme</button>
+          <button data-value="particulier" data-label="un particulier ou artisan" id="particulier">Particulier · artisan</button>
+          <button data-value="candidat" data-label="un candidat" id="candidat">Candidat</button>
+          <button data-value="investisseur" data-label="un investisseur ou journaliste" id="investisseur">Investisseur · presse</button>
+        </div>
+        <form class="form" data-demo>
+          <div class="form-row" data-for="industriel,collectivite,eco,investisseur">
+            <div class="field"><label>Organisation</label><input type="text" placeholder="Nom de la société, collectivité ou média"></div>
+            <div class="field"><label>Fonction</label><input type="text" placeholder="Votre fonction"></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label>Nom et prénom</label><input type="text" placeholder="Votre nom" required></div>
+            <div class="field"><label>E-mail professionnel</label><input type="email" placeholder="prenom.nom@exemple.fr" required></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label>Téléphone</label><input type="tel" placeholder="+33"></div>
+            <div class="field"><label>Code postal · pays</label><input type="text" placeholder="75012 · France"></div>
+          </div>
+          <div class="form-row" data-for="industriel">
+            <div class="field"><label>Matières concernées</label><select><option>Ferrailles</option><option>Métaux non ferreux · aluminium · inox</option><option>Véhicules hors d'usage</option><option>DEEE</option><option>Câbles</option><option>Démolition industrielle</option><option>Destructions confidentielles</option><option>Gestion globale de site</option><option>Plusieurs flux</option></select></div>
+            <div class="field"><label>Volume annuel estimé</label><select><option>Moins de 500 t</option><option>500 à 5 000 t</option><option>5 000 à 50 000 t</option><option>Plus de 50 000 t</option></select></div>
+          </div>
+          <div class="form-row" data-for="collectivite">
+            <div class="field"><label>Prestation</label><select><option>Collecte des déchets ménagers</option><option>Nettoiement urbain</option><option>Gestion de déchèteries</option><option>Centre de tri</option></select></div>
+            <div class="field"><label>Population desservie</label><input type="text" placeholder="Nombre d'habitants"></div>
+          </div>
+          <div class="form-row" data-for="eco" style="display:none">
+            <div class="field"><label>Filière</label><select><option>DEEE</option><option>DEA · ameublement</option><option>VHU</option><option>PMCB · bâtiment</option><option>ASL · sport et loisirs</option><option>ABJ · bricolage et jardin</option></select></div>
+            <div class="field"><label>Périmètre géographique</label><input type="text" placeholder="Régions, pays"></div>
+          </div>
+          <div class="form-row" data-for="particulier" style="display:none">
+            <div class="field"><label>Besoin</label><select><option>Vendre des métaux</option><option>Louer une benne</option><option>Autre</option></select></div>
+            <div class="field"><label>Matières</label><input type="text" placeholder="Cuivre, laiton, ferraille…"></div>
+          </div>
+          <div class="form-row" data-for="candidat" style="display:none">
+            <div class="field"><label>Famille de métier</label><select><option>Exploitation</option><option>Maintenance industrielle</option><option>Commerce &amp; achats matières</option><option>Ingénierie &amp; projets</option><option>Logistique &amp; transport</option><option>Fonctions support</option><option>Alternance · stage</option></select></div>
+            <div class="field"><label>Mobilité</label><input type="text" placeholder="Villes, régions, pays"></div>
+          </div>
+          <div class="field"><label>Votre message</label><textarea placeholder="Décrivez votre besoin, vos flux, votre calendrier…"></textarea></div>
+          <label class="checkline"><input type="checkbox" required> J'accepte que mes données soient traitées par Derichebourg pour répondre à ma demande, conformément à la politique de protection des données personnelles.</label>
+          <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:8px">
+            <button class="btn" type="submit">Envoyer ma demande <span class="arr"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></span></button>
+            <span class="form-note">Réponse sous 48 h ouvrées.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SITES -->
+  <section class="section theme-charbon" id="sites">
+    <div class="container">
+      <div class="section-head">
+        <div class="label reveal"><span class="idx">02</span> Trouver un site</div>
+        <h2 class="display-l lines"><span class="line"><span>Le centre</span></span><span class="line"><span>le plus proche.</span></span></h2>
+        <p class="lead reveal">Horaires, matières acceptées, conditions d'achat : 455 implantations dans 17 pays. Saisissez une ville ou un code postal, ou explorez la carte.</p>
+      </div>
+      <form class="search" data-demo>
+        <div class="field"><label>Ville ou code postal</label><input type="text" placeholder="Ex. : Bonneuil-sur-Marne, 59, Madrid…"></div>
+        <button class="btn" type="submit">Rechercher <span class="arr"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></span></button>
+      </form>
+      <div class="map-stage" data-view="france" data-cursor="Explorer">
+        <svg></svg>
+        <div class="hud"><b>455</b>implantations</div>
+        <div class="zoom"><button data-view="europe" title="Europe">EU</button><button data-view="france" class="is-active" title="France">FR</button><button data-view="monde" title="Monde">🌐</button></div>
+        <div class="map-tip"></div>
+      </div>
+      <div class="flagships" data-stagger="0.06">
+        <div class="flagship"><span>Siège · Paris</span><b>Siège du groupe</b><p>119 av. du Général Michel Bizot, 75012 Paris. Direction générale, finance, investisseurs.</p></div>
+        <div class="flagship"><span>DEEE · Val-de-Marne</span><b>Usine de Bonneuil-sur-Marne</b><p>Lignes frigos et chauffe-eau, deux lignes supplémentaires en construction.</p></div>
+        <div class="flagship"><span>Câbles · Nord</span><b>Usine d'Escautpont</b><p>18 M€, 20 000 t/an de câbles cuivre broyés et granulés.</p></div>
+        <div class="flagship"><span>Câbles · Saône-et-Loire</span><b>Usine de Saint-Marcel</b><p>Première ligne cuivre du groupe (2020), 20 000 t/an.</p></div>
+        <div class="flagship"><span>CSR · Meuse</span><b>Valèreco · Pagny-sur-Meuse</b><p>Coentreprise avec Vicat : 34 000 t/an de combustibles solides de récupération.</p></div>
+        <div class="flagship"><span>Câbles · Espagne</span><b>Madrid</b><p>Ligne de granulation de câbles (2025). Lyrsa : 18 centres en Espagne.</p></div>
+        <div class="flagship"><span>Siège Scholz · Allemagne</span><b>Essingen</b><p>180 sites, 3 500 collaborateurs, Allemagne et Europe centrale depuis le 31 juillet 2026.</p></div>
+        <div class="flagship"><span>Amérique du Nord</span><b>Grand Montréal</b><p>Siège nord-américain : collecte des déchets et services aux collectivités.</p></div>
+      </div>
+      <p class="muted" style="font-size:.74rem;margin-top:16px;font-family:var(--font-mono);letter-spacing:.06em">Recherche et fiches détaillées connectées à la base des implantations sur le site final. Positions des sites courants indicatives.</p>
+    </div>
+  </section>
+
+  <!-- AUTRES CONTACTS -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="info-grid" data-stagger="0.1">
+        <div class="info"><h4>Presse &amp; médias</h4><p>Demandes d'interview, visuels, visites de sites : sélectionnez « Investisseur · presse » dans le formulaire.<br><a href="#investisseur">Contacter le service presse →</a></p></div>
+        <div class="info"><h4>Éthique &amp; alerte</h4><p>Dispositif d'alerte professionnelle du groupe, protection des lanceurs d'alerte, plan de vigilance.<br><a href="#">Accéder au dispositif →</a></p></div>
+        <div class="info"><h4>Fournisseurs</h4><p>Référencement, conditions générales d'achat, facturation électronique.<br><a href="#">Espace fournisseurs →</a></p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><img src="assets/logo/logo-derichebourg-blanc.svg" alt="Derichebourg"><p>Groupe industriel français du recyclage des métaux. 119 avenue du Général Michel Bizot, 75012 Paris.</p>
+        <div class="socials"><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a></div></div>
+      <div><h4>Le Groupe</h4><ul><li><a href="groupe.html#histoire">Histoire</a></li><li><a href="groupe.html#gouvernance">Gouvernance</a></li><li><a href="groupe.html#chiffres">Chiffres clés</a></li><li><a href="groupe.html#implantations">Implantations</a></li><li><a href="groupe.html#valeurs">Valeurs</a></li></ul></div>
+      <div><h4>Nos métiers</h4><ul><li><a href="metiers.html#entreprises">Industriels &amp; entreprises</a></li><li><a href="metiers.html#collectivites">Collectivités</a></li><li><a href="metiers.html#eco-organismes">Éco-organismes</a></li><li><a href="metiers.html#particuliers">Particuliers &amp; artisans</a></li><li><a href="metiers.html#procede">Le procédé</a></li></ul></div>
+      <div><h4>Groupe</h4><ul><li><a href="innovation.html">Innovation &amp; industrie</a></li><li><a href="engagements.html">Engagements</a></li><li><a href="carrieres.html">Carrières</a></li><li><a href="investisseurs.html">Investisseurs</a></li><li><a href="index.html#actualites">Presse</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="contact.html">Nous contacter</a></li><li><a href="contact.html#sites">Trouver un site</a></li><li><a href="investisseurs.html#contact">Relations investisseurs</a></li><li><a href="#">Presse &amp; médias</a></li></ul></div>
+    </div>
+    <div class="footer-giant" aria-hidden="true">Derichebourg</div>
+    <div class="footer-bottom"><span class="ticker-dbg"><i></i> Euronext Paris · DBG · ISIN FR0000053381</span><ul><li><a href="#">Mentions légales</a></li><li><a href="#">Données personnelles</a></li><li><a href="#">Cookies</a></li><li><a href="#">Accessibilité</a></li><li><a href="#">Éthique &amp; alerte</a></li></ul><span>© <span data-year>2026</span> Derichebourg SA</span></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/map.js"></script>
+<script>
+  // Pré-sélection du public via l'ancre (#candidat, #investisseur…)
+  const h = location.hash.replace('#', '');
+  const b = h && document.querySelector('.segment button[data-value="' + h + '"]');
+  if (b) setTimeout(() => b.click(), 50);
+</script>
+</body>
+</html>
