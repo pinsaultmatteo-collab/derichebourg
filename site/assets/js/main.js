@@ -43,14 +43,14 @@
   });
 
   /* ------------------------------------------------------------ Préchargeur */
-  const pre = document.querySelector('.preloader');
+  const pre = window.__preDone ? null : document.querySelector('.preloader');
   const ready = () => document.dispatchEvent(new CustomEvent('site:ready'));
   if (pre) {
     document.documentElement.classList.add('is-loading');
     if (lenis) lenis.stop();
     const fg = pre.querySelector('.fg');
     const pct = pre.querySelector('.pct');
-    const start = performance.now();
+    const start = 0; // compté depuis le début de la navigation, scripts externes compris
     const minDur = reduced ? 200 : 1500;
     let loaded = document.readyState === 'complete';
     window.addEventListener('load', () => { loaded = true; });
@@ -64,6 +64,7 @@
       if (p >= 1 && done && t >= minDur) finish(); else requestAnimationFrame(tick);
     };
     const finish = () => {
+      if (window.__preDone) return; window.__preDone = true; clearTimeout(window.__preloaderKill);
       const curtain = pre.querySelector('.curtain');
       const inner = pre.querySelector('.preloader-inner');
       const done = () => { pre.remove(); document.documentElement.classList.remove('is-loading'); if (lenis) lenis.start(); ready(); };

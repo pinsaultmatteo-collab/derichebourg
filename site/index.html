@@ -29,6 +29,18 @@
   </div>
   <div class="curtain"></div>
 </div>
+<script>
+(function () {
+  var p = document.querySelector('.preloader'); if (!p) return;
+  var fg = p.querySelector('.fg'), pct = p.querySelector('.pct'), dur = 1500;
+  (function tick() { var k = Math.min(1, performance.now() / dur); if (fg) fg.style.strokeDashoffset = 289 - 289 * k; if (pct) pct.textContent = String(Math.round(k * 100)).padStart(3, '0') + ' %'; if (k < 1 && !window.__preDone) requestAnimationFrame(tick); })();
+  window.__preloaderKill = setTimeout(function () {
+    if (window.__preDone || !document.body.contains(p)) return;
+    window.__preDone = true; p.style.transition = 'opacity .5s'; p.style.opacity = '0';
+    setTimeout(function () { p.remove(); document.documentElement.classList.remove('is-loading'); if (window.__lenis) window.__lenis.start(); document.dispatchEvent(new CustomEvent('site:ready')); }, 520);
+  }, 3800);
+})();
+</script>
 <div class="veil"></div>
 <div class="noise"></div>
 
@@ -104,6 +116,7 @@
 <main>
   <!-- ============================================================ HERO -->
   <section class="hero" id="top">
+   <div class="hero-sticky">
     <div class="hero-canvas" aria-hidden="true"></div>
     <div class="hero-vignette"></div>
     <div class="hero-side">Il y a toujours matière à recycler — depuis 1956</div>
@@ -126,6 +139,13 @@
       </div>
     </div>
     <div class="scroll-cue"><span>Défiler</span><div class="bar"></div></div>
+    <div class="hero-infos" aria-live="polite">
+      <div class="hero-info" data-cubes="5 MDS€"><div class="k">01 / 04 · 5,0 Mds€</div><h3>Chiffre d'affaires pro forma</h3><p>Après l'acquisition de Scholz Recycling, finalisée le 31 juillet 2026. Exercice 2024-2025 publié : 3 337 M€.</p></div>
+      <div class="hero-info" data-cubes="8 800"><div class="k">02 / 04 · 8 800 collaborateurs</div><h3>Des emplois verts, ancrés localement</h3><p>Sur des sites industriels et périurbains impossibles à délocaliser, formés et habilités.</p></div>
+      <div class="hero-info" data-cubes="17 PAYS"><div class="k">03 / 04 · 17 pays, 3 continents</div><h3>Une présence continentale</h3><p>France, Allemagne et Europe centrale, Espagne, Italie, Benelux, Amérique du Nord.</p></div>
+      <div class="hero-info" data-cubes="455 SITES"><div class="k">04 / 04 · 455 implantations</div><h3>Le gisement capté là où il naît</h3><p>Près de 300 centres Derichebourg et 180 sites Scholz, sous une seule identité.</p></div>
+    </div>
+   </div>
   </section>
 
   <!-- Chiffres clés : révélés après le premier écran -->
