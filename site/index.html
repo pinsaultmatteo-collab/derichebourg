@@ -31,7 +31,6 @@
 </div>
 <div class="veil"></div>
 <div class="noise"></div>
-<div class="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div><div class="cursor-label">Voir</div></div>
 
 <!-- En-tête -->
 <header class="header">
@@ -125,6 +124,13 @@
           <a class="btn btn-ghost" href="contact.html#sites">Trouver un site <span class="arr"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></span></a>
         </div>
       </div>
+    </div>
+    <div class="scroll-cue"><span>Défiler</span><div class="bar"></div></div>
+  </section>
+
+  <!-- Chiffres clés : révélés après le premier écran -->
+  <section class="hero-figures reveal">
+    <div class="container">
       <div class="hero-stats">
         <div class="stat"><div class="num"><span data-count="5" data-decimals="1">0,0</span><small>Mds€</small></div><div class="cap">Chiffre d'affaires pro forma</div></div>
         <div class="stat"><div class="num"><span data-count="8800">0</span></div><div class="cap">Collaborateurs</div></div>
@@ -132,15 +138,39 @@
         <div class="stat"><div class="num"><span data-count="455">0</span></div><div class="cap">Implantations</div></div>
       </div>
     </div>
-    <div class="scroll-cue"><span>Défiler</span><div class="bar"></div></div>
   </section>
 
-  <!-- Filiales -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Revival</span><span>Purfer</span><span>Eska</span><span>AFM Recyclage</span><span>Inorec</span><span>Refinal</span><span>Fricom</span><span>Valme</span><span>Corepa</span><span>Polyurbaine</span><span>Lyrsa</span><span>Ecore</span><span>Scholz Recycling</span><span>George</span><span>CRS</span><span>San Germano</span><span>Derichebourg Umwelt</span><span>Derichebourg Medio Ambiente</span><span>Derichebourg Canada</span><span>Valèreco</span>
+  <!-- Marques et filiales -->
+  <section class="logo-wall">
+    <div class="container">
+      <div class="logo-wall-head reveal">
+        <div><div class="label"><span class="idx">—</span> Nos marques et filiales</div><h2 class="display-s" style="margin-top:14px;font-size:clamp(1.3rem,1.8vw,1.7rem)">Vingt entités opérationnelles, une seule identité.</h2></div>
+        <p>Des marques historiques, souvent régionales, qui portent l'exigence du groupe sur le terrain. Emplacements prêts à recevoir les logos vectoriels de chaque entité.</p>
+      </div>
+      <div class="logos" data-stagger="0.04">
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" stroke-dasharray="4 3"/><path class="r" d="M12 4a8 8 0 0 1 8 8"/><path class="rf" d="M20 12l-2.2-2.2h4.4z"/></svg></i><b>Revival<small>France</small></b></div><div class="meta"><span>Recyclage des métaux</span><em>FR</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><path d="M4 17h16M4 12h16M4 7h16"/><path class="r" d="M4 12h7"/></svg></i><b>Purfer<small>Ferrailles · CSR</small></b></div><div class="meta"><span>Recyclage des métaux</span><em>FR</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><path d="M4 17h16M4 12h16M4 7h16"/><path class="r" d="M4 12h7"/></svg></i><b>Eska<small>Centres de recyclage</small></b></div><div class="meta"><span>Recyclage des métaux</span><em>FR</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><path d="M4 17h16M4 12h16M4 7h16"/><path class="r" d="M4 12h7"/></svg></i><b>AFM Recyclage<small>Métaux</small></b></div><div class="meta"><span>Recyclage des métaux</span><em>FR</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><path d="M5 15h14l-2-6H7z"/><path d="M3 19h18"/><path class="r" d="M9 12h6"/></svg></i><b>Inorec<small>Aciers inoxydables</small></b></div><div class="meta"><span>Non ferreux</span><em>FR</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><path d="M5 15h14l-2-6H7z"/><path d="M3 19h18"/><path class="r" d="M9 12h6"/></svg></i><b>Refinal<small>Aluminium · fonderie</small></b></div><div class="meta"><span>Non ferreux</span><em>FR</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0z"/><path class="r" d="M12 17v4"/></svg></i><b>Fricom<small>Électroménager</small></b></div><div class="meta"><span>DEEE</span><em>FR</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0z"/><path class="r" d="M12 17v4"/></svg></i><b>Valme<small>Électronique</small></b></div><div class="meta"><span>DEEE</span><em>FR</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0z"/><path class="r" d="M12 17v4"/></svg></i><b>Corepa<small>Lignes frigos</small></b></div><div class="meta"><span>DEEE</span><em>FR</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/><path class="r" d="M6 10h5"/></svg></i><b>Polyurbaine<small>Paris · Marseille</small></b></div><div class="meta"><span>Collectivités</span><em>FR</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" stroke-dasharray="4 3"/><path class="r" d="M12 4a8 8 0 0 1 8 8"/><path class="rf" d="M20 12l-2.2-2.2h4.4z"/></svg></i><b>Ecore<small>Ex-GDE · 2021</small></b></div><div class="meta"><span>Recyclage des métaux</span><em>FR · LU</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><path d="M12 3c2 3 6 5 6 10a6 6 0 0 1-12 0c0-3 2-4 2-7 1 1 2 2 2 4 1-2 2-4 2-7z"/><path class="r" d="M12 20a3 3 0 0 0 3-3c0-2-3-4-3-4s-3 2-3 4a3 3 0 0 0 3 3z"/></svg></i><b>Valèreco<small>Avec Vicat</small></b></div><div class="meta"><span>Combustibles de récupération</span><em>FR</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><path d="M4 17h16M4 12h16M4 7h16"/><path class="r" d="M4 12h7"/></svg></i><b>Lyrsa<small>18 centres</small></b></div><div class="meta"><span>Ferrailles</span><em>ES</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c3 3 3 13 0 16M12 4c-3 3-3 13 0 16"/></svg></i><b>Derichebourg Medio Ambiente<small>Espagne</small></b></div><div class="meta"><span>Recyclage des métaux</span><em>ES</em></div></div>
+        <div class="logo-tile new"><div class="mark"><i><svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path class="r" d="M12 3v18"/></svg></i><b>Scholz Recycling<small>180 sites</small></b></div><div class="meta"><span>Métaux · papier · plastiques</span><em>DE · CZ · PL · SI</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c3 3 3 13 0 16M12 4c-3 3-3 13 0 16"/></svg></i><b>Derichebourg Umwelt<small>Allemagne</small></b></div><div class="meta"><span>Recyclage des métaux</span><em>DE</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" stroke-dasharray="4 3"/><path class="r" d="M12 4a8 8 0 0 1 8 8"/><path class="rf" d="M20 12l-2.2-2.2h4.4z"/></svg></i><b>George<small>Belgique</small></b></div><div class="meta"><span>Recyclage des métaux</span><em>BE</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" stroke-dasharray="4 3"/><path class="r" d="M12 4a8 8 0 0 1 8 8"/><path class="rf" d="M20 12l-2.2-2.2h4.4z"/></svg></i><b>CRS<small>Italie</small></b></div><div class="meta"><span>Recyclage des métaux</span><em>IT</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/><path class="r" d="M6 10h5"/></svg></i><b>San Germano<small>Italie</small></b></div><div class="meta"><span>Collectivités</span><em>IT</em></div></div>
+        <div class="logo-tile"><div class="mark"><i><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/><path class="r" d="M6 10h5"/></svg></i><b>Derichebourg Canada<small>Grand Montréal</small></b></div><div class="meta"><span>Collectivités</span><em>CA</em></div></div>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- ============================================================ MANIFESTE -->
   <section class="section manifesto theme-light">
@@ -175,12 +205,12 @@
         <div class="figure"><div class="tag"><span>Implantations</span><i>3 continents</i></div><div><div class="num"><span data-count="455">0</span></div><p class="cap">Près de 300 centres Derichebourg et 180 sites Scholz, sous une seule identité.</p></div></div>
         <div class="figure"><div class="tag"><span>Expérience</span><i>1956</i></div><div><div class="num"><span data-count="70">0</span><small>ans</small></div><p class="cap">Coté à Paris depuis 1963. Famille Derichebourg aux commandes depuis 1996.</p></div></div>
         <div class="figure-img"><img src="assets/img/ferraille-montagne.jpg" alt="Montagne de ferraille broyée sur un site Derichebourg" loading="lazy"><span class="cap">Ferraille préparée · site Derichebourg</span></div>
-        <div class="figure"><div class="tag"><span>Acier recyclé</span><i>par an</i></div><div><div class="num"><span data-count="4" data-decimals="1">0,0</span><small>Mt</small></div><p class="cap">Livrées aux aciéries électriques aux spécifications exigées.</p></div></div>
+        <div class="figure"><div class="tag"><span>Acier recyclé</span><i>par an</i></div><div><div class="num"><span data-count="4.4" data-decimals="1">0,0</span><small>Mt</small></div><p class="cap">Livrées aux aciéries électriques aux spécifications exigées.</p></div></div>
         <div class="figure"><div class="tag"><span>Non ferreux</span><i>par an</i></div><div><div class="num"><span data-count="695100">0</span><small>t</small></div><p class="cap">Cuivre, aluminium, laiton, inox, zinc, plomb triés et affinés.</p></div></div>
         <div class="figure"><div class="tag"><span>Véhicules hors d'usage</span><i>par an</i></div><div><div class="num"><span data-count="643700">0</span></div><p class="cap">Dépollués, démontés, broyés dans nos centres agréés.</p></div></div>
         <div class="figure"><div class="tag"><span>DEEE</span><i>par an</i></div><div><div class="num"><span data-count="376000">0</span><small>t</small></div><p class="cap">Électroménager et électronique traités pour les éco-organismes.</p></div></div>
         <div class="figure"><div class="tag"><span>Lingots d'aluminium</span><i>fonderie</i></div><div><div class="num"><span data-count="73480">0</span><small>t</small></div><p class="cap">Produits dans notre fonderie française.</p></div></div>
-        <div class="figure"><div class="tag"><span>CO₂ évité</span><i>2023-2024</i></div><div><div class="num"><span data-count="7" data-decimals="1">0,0</span><small>Mt</small></div><p class="cap">Soit les émissions annuelles de 945 000 Européens.</p></div></div>
+        <div class="figure"><div class="tag"><span>CO₂ évité</span><i>2023-2024</i></div><div><div class="num"><span data-count="7.6" data-decimals="1">0,0</span><small>Mt</small></div><p class="cap">Soit les émissions annuelles de 945 000 Européens.</p></div></div>
         <div class="figure-img"><img src="assets/img/aluminium-lingots.jpg" alt="Lingots d'aluminium produits par Derichebourg" loading="lazy"><span class="cap">Lingots d'aluminium · fonderie Derichebourg</span></div>
       </div>
     </div>
@@ -381,29 +411,28 @@
   <section class="timeline" id="histoire">
     <div class="tl-pin">
       <div class="tl-head">
-        <div>
-          <div class="label"><span class="idx">06</span> 70 ans de métier</div>
-          <h2 class="display-l" style="margin-top:18px">1956 → 2026</h2>
+        <div><div class="label"><span class="idx">06</span> 70 ans de métier</div><h2 class="display-l" style="margin-top:18px">1956 → 2026</h2></div>
+        <div class="hint"><i></i>Défiler pour parcourir la frise</div>
+      </div>
+      <div class="tl-scroller">
+        <div class="tl-axis"></div>
+        <div class="tl-track">
+          <div class="tl-item key"><div class="year">1956</div><h4>Naissance de la CFF</h4><p>La Compagnie Française des Ferrailles est créée par des entrepreneurs conscients du potentiel de valorisation des déchets métalliques.</p><img src="assets/img/histoire-camionnette.jpg" alt="Camionnette Derichebourg des origines" loading="lazy"></div>
+          <div class="tl-item"><div class="year">1963</div><h4>Introduction en Bourse</h4><p>Le 23 avril 1963, la CFF entre à la Bourse de Paris. Le groupe est coté sans interruption depuis, aujourd'hui au SBF 120.</p></div>
+          <div class="tl-item"><div class="year">1977</div><h4>Novafer</h4><p>Absorption de la branche ferreux et non ferreux de Novafer.</p><img src="assets/img/histoire-premier-broyeur.jpg" alt="Premier broyeur en opération en France" loading="lazy"></div>
+          <div class="tl-item"><div class="year">1987</div><h4>Metalinor</h4><p>Reprise de la filiale d'Usinor-Sacilor : le chiffre d'affaires double.</p></div>
+          <div class="tl-item key"><div class="year">1996</div><h4>La famille Derichebourg</h4><p>Daniel Derichebourg, fils d'un récupérateur de métaux, prend le contrôle de la CFF via sa holding CFER. Trente ans d'acquisitions ciblées commencent.</p><img src="assets/img/histoire-coulee.jpg" alt="Coulée de métal" loading="lazy"></div>
+          <div class="tl-item"><div class="year">2007</div><h4>Le groupe Derichebourg</h4><p>Fusion de CFF Recycling et Penauille Polyservices : naissance du groupe et de son identité rouge, noir et blanc.</p><img src="assets/img/histoire-camions-2007.jpg" alt="Flotte Derichebourg" loading="lazy"></div>
+          <div class="tl-item"><div class="year">2013</div><h4>Recentrage</h4><p>Cession de Servisair à Swissport pour 450 M€ : le groupe se recentre sur l'environnement.</p></div>
+          <div class="tl-item"><div class="year">2016</div><h4>Vague française</h4><p>Valerio, Galloo Île-de-France, SLG Recycling (22 centres) et Bartin Recycling (20 sites, 450 000 t/an) rejoignent le groupe.</p><img src="assets/img/histoire-cop21.jpg" alt="Chaîne de tri présentée à la COP21" loading="lazy"></div>
+          <div class="tl-item"><div class="year">2019</div><h4>Lyrsa · Espagne</h4><p>Acquisition du leader espagnol du recyclage de ferrailles et de ses 18 centres.</p></div>
+          <div class="tl-item key"><div class="year">2021</div><h4>Ecore</h4><p>Rachat d'Ecore (1,2 Md€ de CA) : Derichebourg devient le n°1 français incontesté du recyclage des métaux.</p><img src="assets/img/vhu-compactes.jpg" alt="Carcasses compactées" loading="lazy"></div>
+          <div class="tl-item"><div class="year">2023</div><h4>Recyclage pur</h4><p>Apport de Derichebourg Multiservices à Elior contre 48 % du capital. Abderrahmane El Aoufir devient directeur général.</p></div>
+          <div class="tl-item key"><div class="year">2026</div><h4>Scholz Recycling</h4><p>Closing le 31 juillet : 180 sites, 3 500 collaborateurs, l'Allemagne et l'Europe centrale. Derichebourg devient le premier recycleur de métaux d'Europe.</p><img src="assets/img/aluminium-lingots.jpg" alt="Lingots d'aluminium" loading="lazy"></div>
+          <div class="tl-item"><div class="year">2026</div><h4>Obligations vertes</h4><p>10 septembre : première émission d'obligations vertes, 800 M€ levés pour financer la croissance du recyclage.</p></div>
         </div>
-        <div class="hint">Défiler pour parcourir la frise →</div>
       </div>
-      <div class="tl-axis"></div>
-      <div class="tl-track">
-        <div class="tl-item key"><div class="year">1956</div><h4>Naissance de la CFF</h4><p>La Compagnie Française des Ferrailles est créée par des entrepreneurs conscients du potentiel de valorisation des déchets métalliques.</p><img src="assets/img/histoire-camionnette.jpg" alt="Camionnette Derichebourg des origines" loading="lazy"></div>
-        <div class="tl-item up"><div class="year">1963</div><h4>Introduction en Bourse</h4><p>Le 23 avril 1963, la CFF entre à la Bourse de Paris. Le groupe est coté sans interruption depuis.</p></div>
-        <div class="tl-item"><div class="year">1977</div><h4>Novafer</h4><p>Absorption de la branche ferreux et non ferreux de Novafer.</p><img src="assets/img/histoire-premier-broyeur.jpg" alt="Premier broyeur en opération en France" loading="lazy"></div>
-        <div class="tl-item up"><div class="year">1987</div><h4>Metalinor</h4><p>Reprise de la filiale d'Usinor-Sacilor : le chiffre d'affaires double.</p></div>
-        <div class="tl-item key"><div class="year">1996</div><h4>La famille Derichebourg</h4><p>Daniel Derichebourg, fils d'un récupérateur de métaux, prend le contrôle de la CFF via sa holding CFER. Trente ans d'acquisitions ciblées commencent.</p><img src="assets/img/histoire-coulee.jpg" alt="Coulée de métal" loading="lazy"></div>
-        <div class="tl-item up"><div class="year">2007</div><h4>Le groupe Derichebourg</h4><p>Fusion de CFF Recycling et Penauille Polyservices : naissance du groupe et de son identité rouge, noir et blanc.</p><img src="assets/img/histoire-camions-2007.jpg" alt="Flotte Derichebourg" loading="lazy"></div>
-        <div class="tl-item"><div class="year">2013</div><h4>Recentrage</h4><p>Cession de Servisair à Swissport pour 450 M€ : le groupe se recentre sur l'environnement.</p></div>
-        <div class="tl-item up"><div class="year">2016</div><h4>Vague française</h4><p>Valerio, Galloo Île-de-France, SLG Recycling (22 centres), Bartin Recycling (20 sites, 450 000 t/an) rejoignent le groupe.</p><img src="assets/img/histoire-cop21.jpg" alt="Chaîne de tri Derichebourg présentée à la COP21" loading="lazy"></div>
-        <div class="tl-item"><div class="year">2019</div><h4>Lyrsa · Espagne</h4><p>Acquisition du leader espagnol du recyclage de ferrailles et de ses 18 centres.</p></div>
-        <div class="tl-item up key"><div class="year">2021</div><h4>Ecore</h4><p>Rachat d'Ecore (1,2 Md€ de CA) : Derichebourg devient le n°1 français incontesté du recyclage des métaux.</p><img src="assets/img/vhu-compactes.jpg" alt="Carcasses compactées" loading="lazy"></div>
-        <div class="tl-item"><div class="year">2023</div><h4>Recyclage pur</h4><p>Apport de Derichebourg Multiservices à Elior contre 48 % du capital. Abderrahmane El Aoufir devient directeur général.</p></div>
-        <div class="tl-item up key"><div class="year">2026</div><h4>Scholz Recycling</h4><p>Closing le 31 juillet : 180 sites, 3 500 collaborateurs, l'Allemagne et l'Europe centrale. Derichebourg devient le premier recycleur de métaux d'Europe.</p><img src="assets/img/aluminium-lingots.jpg" alt="Lingots d'aluminium" loading="lazy"></div>
-        <div class="tl-item"><div class="year">2026</div><h4>Obligations vertes</h4><p>10 septembre : première émission d'obligations vertes, 800 M€ levés pour financer la croissance du recyclage.</p></div>
-      </div>
-      <div class="tl-progress"><span></span></div>
+      <div class="tl-progress"><span></span><b>13 jalons</b></div>
     </div>
   </section>
 
@@ -416,28 +445,17 @@
         <h2 class="display-l lines"><span class="line"><span>Nous réinvestissons</span></span><span class="line"><span>la quasi-totalité du résultat.</span></span></h2>
         <p class="lead reveal">Les gisements se complexifient, la réglementation exige des taux de recyclage croissants, l'industrie veut une matière d'une qualité irréprochable. La réponse : des installations ultra-performantes, dupliquées en Europe.</p>
       </div>
-      <div class="innov-grid" data-stagger="0.08">
-        <div class="innov-card wide">
-          <img src="assets/img/u-cables-cuivre.jpg" alt="" loading="lazy">
-          <div class="top"><span class="year">2020 → 2025</span><div class="num"><span data-count="3">0</span><small>usines câbles</small></div></div>
-          <div><h3>Le cuivre, granulé chez nous</h3><p>Saint-Marcel (2020), Escautpont (18 M€, 20 000 t/an, soutenue par France Relance) puis Madrid (2025) : des broyeurs, granulateurs et tables densimétriques qui livrent des grenailles de cuivre directement aux fonderies. Une production relocalisée en Europe.</p></div>
-        </div>
-        <div class="innov-card">
-          <div class="top"><span class="year">2024-2025</span><div class="num"><span data-count="131">0</span><small>M€</small></div></div>
-          <div><h3>Capex annuel</h3><p>45 % de l'EBITDA réinvesti dans l'outil industriel. 189,5 M€ l'exercice précédent, 58,2 M€ au seul premier semestre 2025-2026.</p></div>
-        </div>
-        <div class="innov-card">
-          <div class="top"><span class="year">Avril 2025</span><div class="num">JV</div></div>
-          <div><h3>Batteries lithium-ion</h3><p>Coentreprise avec LG Energy Solution pour recycler les batteries : Derichebourg se positionne sur le gisement automobile de demain.</p></div>
-        </div>
-        <div class="innov-card">
-          <div class="top"><span class="year">Sept. 2025</span><div class="num"><span data-count="3">0</span><small>lignes</small></div></div>
-          <div><h3>Bonneuil-sur-Marne</h3><p>Usine de traitement des chauffe-eau, deux lignes supplémentaires en construction, une troisième prévue en 2026-2027.</p></div>
-        </div>
-        <div class="innov-card">
-          <div class="top"><span class="year">Objectif</span><div class="num"><span data-count="40">0</span><small>%</small></div></div>
-          <div><h3>Valorisation des résidus</h3><p>Le taux de valorisation des résidus de broyage est passé de 27,6 % (2019) à 31,5 % (2022). Chaque point gagné, c'est de la matière qui ne part plus en enfouissement.</p></div>
-        </div>
+      <div class="innov-strip" data-stagger="0.1">
+        <div><div class="tag"><span>Investissements</span><i>2024-2025</i></div><div><div class="num"><span data-count="131">0</span><small>M€</small></div><p class="cap">45 % de l'EBITDA réinvesti dans l'outil industriel. 189,5 M€ l'exercice précédent, 58,2 M€ au seul premier semestre 2025-2026.</p></div></div>
+        <div><div class="tag"><span>Depuis 2020</span><i>France · Espagne</i></div><div><div class="num"><span data-count="8">0</span><small>sites</small></div><p class="cap">Lignes ou usines nouvelles, du cuivre aux chauffe-eau, dupliquées en Europe.</p></div></div>
+        <div class="img"><img src="assets/img/u-cables-cuivre.jpg" alt="Câbles cuivre avant granulation" loading="lazy"><span class="cap">Câbles cuivre · granulation</span></div>
+      </div>
+      <div class="innov-ledger reveal">
+        <a class="innov-row" href="innovation.html#installations"><div class="year">2020 → 2025<small>3 usines</small></div><div><h3>Le cuivre, granulé chez nous</h3><p>Saint-Marcel, Escautpont (18 M€, soutenue par France Relance) puis Madrid : des grenailles de cuivre livrées directement aux fonderies, une production relocalisée en Europe.</p></div><div class="kpi"><b>20 000 t</b><span>par usine et par an</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></a>
+        <a class="innov-row" href="innovation.html#partenariats"><div class="year">Avril 2025<small>coentreprise</small></div><div><h3>Batteries lithium-ion avec LG Energy Solution</h3><p>Derichebourg se positionne sur le gisement automobile électrique de demain.</p></div><div class="kpi"><b>JV</b><span>LG Energy Solution</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></a>
+        <a class="innov-row" href="innovation.html#installations"><div class="year">Sept. 2025 → 2027<small>Bonneuil-sur-Marne</small></div><div><h3>Usine de traitement des chauffe-eau</h3><p>Une ligne en service, deux en construction, une troisième prévue : la plus grande capacité DEEE du groupe en Île-de-France.</p></div><div class="kpi"><b>3</b><span>lignes</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></a>
+        <a class="innov-row" href="innovation.html#valereco"><div class="year">2 sept. 2026<small>Pagny-sur-Meuse</small></div><div><h3>Valèreco : combustibles de récupération avec Vicat</h3><p>7 M€ pour une ligne de CSR alimentant la cimenterie de Xeuilley, environ 30 000 t de CO₂ évitées par an. Trente-cinq ans de partenariat.</p></div><div class="kpi"><b>34 000 t</b><span>par an</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></a>
+        <a class="innov-row" href="innovation.html#procedes"><div class="year">2019 → objectif<small>indicateur technique</small></div><div><h3>Valorisation des résidus de broyage</h3><p>De 27,6 % en 2019 à 31,5 % en 2022 : chaque point gagné est de la matière qui ne part plus en enfouissement.</p></div><div class="kpi"><b>40 %</b><span>objectif affiché</span></div><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></a>
       </div>
       <div style="margin-top:40px" class="reveal"><a class="link-arrow" href="innovation.html">Toutes nos installations et procédés <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></a></div>
     </div>
@@ -455,7 +473,7 @@
         <div class="pillar">
           <div class="idx">01 · Climat</div>
           <h3>Une matière qui n'est pas extraite</h3>
-          <div class="big"><span data-count="7" data-decimals="1">0,0</span><small>Mt CO₂</small></div>
+          <div class="big"><span data-count="7.6" data-decimals="1">0,0</span><small>Mt CO₂</small></div>
           <p>évitées en 2023-2024 grâce aux matières recyclées, soit les émissions annuelles de 945 000 Européens.</p>
           <div class="bars">
             <div class="bar"><span>Acier</span><div class="track"><span data-w="70"></span></div><b>−70 %</b></div>
@@ -492,7 +510,7 @@
         <div class="pillar">
           <div class="idx">04 · Conformité</div>
           <h3>Un groupe coté, familial, transparent</h3>
-          <div class="big"><span data-count="80" data-decimals="1">0,0</span><small>%</small></div>
+          <div class="big"><span data-count="80.8" data-decimals="1">0,0</span><small>%</small></div>
           <p>du chiffre d'affaires aligné sur la taxonomie européenne. Premier état de durabilité CSRD publié et audité en décembre 2025.</p>
           <ul><li>Comptes audités par trois cabinets</li><li>Plan de vigilance publié</li><li>800 M€ d'obligations vertes, cadre de financement vert (2026)</li><li>Actionnaire familial de contrôle depuis 1996</li></ul>
         </div>
@@ -509,11 +527,11 @@
         <h2 class="display-l lines"><span class="line"><span>Ce qui bouge.</span></span></h2>
         <p class="lead reveal">Communiqués, résultats, inaugurations : l'actualité d'un groupe qui investit et grandit.</p>
       </div>
-      <div class="news-list reveal">
-        <a class="news-item" href="investisseurs.html#actus"><span class="date">10 sept. 2026</span><h3>Première émission d'obligations vertes : 800 M€ levés pour financer la croissance du recyclage</h3><span class="cat">Finance</span><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span><img class="thumb" src="assets/img/u-bobines-acier.jpg" alt=""></a>
-        <a class="news-item" href="innovation.html#valereco"><span class="date">2 sept. 2026</span><h3>Valèreco : Derichebourg et Vicat investissent 7 M€ dans une ligne de combustibles solides de récupération à Pagny-sur-Meuse</h3><span class="cat">Industrie</span><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span><img class="thumb" src="assets/img/cimenterie-aerien.jpg" alt=""></a>
-        <a class="news-item" href="groupe.html#histoire"><span class="date">31 juil. 2026</span><h3>Finalisation de l'acquisition de Scholz Recycling : Derichebourg devient le premier recycleur de métaux d'Europe</h3><span class="cat">Groupe</span><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span><img class="thumb" src="assets/img/ferraille-montagne.jpg" alt=""></a>
-        <a class="news-item" href="investisseurs.html"><span class="date">28 mai 2026</span><h3>Premier semestre 2025-2026 : chiffre d'affaires en hausse de 7,8 %, résultat net en progression de 16,3 %</h3><span class="cat">Résultats</span><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span><img class="thumb" src="assets/img/inox-copeaux.jpg" alt=""></a>
+      <div class="news-list with-thumbs reveal">
+        <a class="news-item" href="investisseurs.html#actus"><span class="thumb-wrap"><img class="thumb" src="assets/img/u-bobines-acier.jpg" alt=""></span><span class="date">10 sept. 2026</span><h3>Première émission d'obligations vertes : 800 M€ levés pour financer la croissance du recyclage</h3><span class="cat">Finance</span><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></a>
+        <a class="news-item" href="innovation.html#valereco"><span class="thumb-wrap"><img class="thumb" src="assets/img/cimenterie-aerien.jpg" alt=""></span><span class="date">2 sept. 2026</span><h3>Valèreco : Derichebourg et Vicat investissent 7 M€ dans une ligne de combustibles solides de récupération à Pagny-sur-Meuse</h3><span class="cat">Industrie</span><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></a>
+        <a class="news-item" href="groupe.html#histoire"><span class="thumb-wrap"><img class="thumb" src="assets/img/ferraille-montagne.jpg" alt=""></span><span class="date">31 juil. 2026</span><h3>Finalisation de l'acquisition de Scholz Recycling : Derichebourg devient le premier recycleur de métaux d'Europe</h3><span class="cat">Groupe</span><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></a>
+        <a class="news-item" href="investisseurs.html"><span class="thumb-wrap"><img class="thumb" src="assets/img/inox-copeaux.jpg" alt=""></span><span class="date">28 mai 2026</span><h3>Premier semestre 2025-2026 : chiffre d'affaires en hausse de 7,8 %, résultat net en progression de 16,3 %</h3><span class="cat">Résultats</span><span class="go"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12L12 2M4 2h8v8"/></svg></span></a>
       </div>
     </div>
   </section>

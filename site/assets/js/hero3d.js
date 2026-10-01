@@ -113,7 +113,7 @@ function init() {
   document.addEventListener('site:ready', () => { started = true; });
   if (!document.querySelector('.preloader')) started = true;
 
-  window.addEventListener('mousemove', (e) => { tmx = (e.clientX / innerWidth - 0.5) * 2; tmy = (e.clientY / innerHeight - 0.5) * 2; }, { passive: true });
+  // Pas de suivi de la souris : la scène vit par sa rotation propre et le défilement.
   new IntersectionObserver((en) => (visible = en[0].isIntersecting)).observe(hero);
 
   const onResize = () => {
