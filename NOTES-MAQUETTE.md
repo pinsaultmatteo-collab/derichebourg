@@ -30,7 +30,8 @@ Stack : HTML/CSS/JS sans framework, GSAP + ScrollTrigger, Lenis (défilement lis
 ## Photos
 
 - 32 photos réelles récupérées dans la médiathèque du site actuel (lingots d'aluminium, montagne de ferraille, camions siglés Derichebourg, ligne DEEE, balayeuses devant Notre-Dame, archives « Notre histoire »).
-- 22 photos Unsplash (préfixe `u-`) pour les ambiances aciérie, coulée, câbles, aérien. Licence Unsplash, libres d'usage ; à remplacer par les photos et vidéos drone du client.
+- 4 photos issues des sites des filiales : Derichebourg España (Lyrsa) et Scholz Recycling, pour la frise historique (`lyrsa-*`, `scholz-*`).
+- 23 photos Unsplash (préfixe `u-`, plus `histoire-bourse.jpg`, le palais Brongniart) pour les ambiances aciérie, coulée, câbles, aérien. Licence Unsplash, libres d'usage ; à remplacer par les photos et vidéos drone du client.
 
 ## Données à valider avec le client avant présentation
 
