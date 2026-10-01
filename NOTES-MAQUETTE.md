@@ -16,7 +16,7 @@ Huit pages, une seule identité (fusion recommandée de derichebourg.com et deri
 
 | Page | Contenu | Pièce maîtresse |
 |---|---|---|
-| `index.html` | Accueil : manifeste, chiffres, chaîne de valeur, publics, rayonnement, frise, innovation, engagements, actualités | Hero 3D épinglé : 1 400 fragments métalliques s'assemblent en lingot, puis au défilement éclatent et se réassemblent pour écrire les quatre chiffres clés (5 Mds€, 8 800, 17 pays, 455 sites) ; globe 3D des 455 sites, boucle SVG en 5 étapes, frise horizontale épinglée |
+| `index.html` | Accueil : manifeste, chiffres, chaîne de valeur, publics, rayonnement, frise, innovation, engagements, actualités | Hero 3D épinglé : 1 400 fragments métalliques s'assemblent en lingot, puis au défilement éclatent une fois et se réassemblent en tableau de bord, les quatre chiffres clés écrits côte à côte (5 Mds€, 8 800, 17, 455) avec leur légende ; globe 3D des 455 sites, boucle SVG en 5 étapes, frise horizontale épinglée |
 | `groupe.html` | Histoire, gouvernance, chiffres, implantations, valeurs | Carte interactive d3 (Europe / France / Monde, filtres pays et métier, sites phares) |
 | `metiers.html` | 4 publics × 11 prestations, procédé, 10 filières | Schéma animé du procédé (réception → cisaillage → broyeur → magnétique → Foucault → 3 destinations) avec particules triées par nature |
 | `innovation.html` | Thèse, 8 installations 2020-2027, 4 procédés, partenariats, marché | Pictogrammes animés, graphique du taux de valorisation |

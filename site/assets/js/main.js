@@ -307,6 +307,9 @@
     window.addEventListener('pageshow', () => gsap.set(veil, { y: '100%' }));
   }
 
+  // Si le garde-fou du préchargeur a déjà retiré l'écran avant le chargement de ce script,
+  // les écouteurs ci-dessus n'ont pas vu l'événement : on le rejoue.
+  if (window.__preDone && pre === null) setTimeout(ready, 60);
   document.querySelectorAll('[data-year]').forEach((el) => (el.textContent = new Date().getFullYear()));
   if (hasGsap) window.addEventListener('load', () => setTimeout(() => ScrollTrigger.refresh(), 400));
 })();
